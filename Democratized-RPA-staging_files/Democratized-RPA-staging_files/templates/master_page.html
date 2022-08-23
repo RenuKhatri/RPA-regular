@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Seqelstring RPA Tool</title>
+
+	<!-- <script src="JQuery/jquery.min.js"></script> -->
+
+	<!-- BOOTSTRAP CDN **REQUIRES INTERNET** -->
+	<link rel="stylesheet" href="{%static 'css/bootstrap_min.css' %}"><!-- Latest compiled and minified CSS -->
+	<script src="{%static 'js/jquery_min.js' %}"></script><!-- jQuery library -->
+	<script src="{%static 'js/popper_min.js' %}"></script><!-- Popper JS -->
+	<script src="{%static 'js/bootstrap_min.js' %}"></script><!-- Latest compiled JavaScript -->
+	
+	<!-- <link rel="stylesheet" href="JQuery/jquery-ui.css"> -->
+	<link rel="stylesheet" href="{%static 'css/master_page_1.css' %}">
+</head>
+<body>
+	<nav class="navbar container-fluid col-lg-12" id="toppanel">
+	 	<div href="#" id="toppanel_left">
+	 		<img  src=" {%static 'assets/ss_logo.jpg'%}" alt="ss_logo">
+	 		
+	 	</div>
+		<!-- <span id="name" style="font-size: 30px;">RPA Tool</span> -->
+		<!-- <img src="{%static 'assets/mibs_logo.png'%}" id="client_logo" alt="mibs_logo" align="right"> -->
+		<div id="toppanel_right">
+			{% if user.is_authenticated %}
+			    <div id ='welcome_user'>Welcome {{ user.get_full_name }}</div>
+			{% else %}
+	    		<div id="welcome_user">Welcome User!</div>
+			{% endif %}
+			<!-- <span id="welcome_user">Welcome User!</span> -->
+			<a href="logout" id="logout">Logout</a>
+		</div>
+	</nav>
+	<nav class="navbar container-fluid col-lg-3" id="left_panel">
+			<a href="home" id="column_links">Home</a>
+		    <a href="project_page.html" id="column_links">Project</a>
+		    <a href="user_profile.html" id="column_links">User Profile</a>
+		    <a href="login.html" id="column_links">Logs</a>
+		    <a href="nodes_page.html" id="column_links">Nodes</a>
+		    <a href="#" id="column_links">Knowledge Bank</a>
+		    <!-- <a href="nodes_page" id="column_links">Task List's</a> -->
+		    <div class="section">
+			    <h4 class="btn btn-primary" id="project_tasks_list">Project Task Lists</h4>
+			   	<ul class="tasks">
+			  		{% for task in task_lists %}
+			            <li class="click_task list-group-item">{{task.product_name}}</li>
+			         {% endfor %}
+			    </ul>
+			</div>
+	</nav>
+
+<!-- <li class="click_task list-group-item" onclick="click_task_btn(this)"> -->
+<!-- <script type="text/javascript">
+	$(function () {
+    $('.click_task').click(function () {
+    	debugger
+        var str = $(this).text();
+     	task_click = {'task_button':str}
+        $.ajax({
+			url : "/task_lists", // the endpoint
+			type : "POST", // http method
+			// dataType: "json",
+			// data : { 'body': nodesArray,
+			// 			'product_name':task_name,
+			// 		}, // data sent with the post request
+			data: task_click,
+			success:  function(response){
+				debugger
+			   alert(response.success);
+		   }
+		});
+    });
+});
+
+</script> -->
+<!-- <script src="{%static  'js/node_connector_main.js' %}"></script> -->
+</body>
+</html>

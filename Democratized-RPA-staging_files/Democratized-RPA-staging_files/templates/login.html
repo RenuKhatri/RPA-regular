@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Seqelstring RPA Tool</title>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+	<!-- BOOTSTRAP CDN **REQUIRES INTERNET** -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+	<!-- Latest compiled and minified CSS -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
+	<!-- jQuery library -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+	<!-- Popper JS -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+	<!-- Latest compiled JavaScript -->
+
+	<!-- <link rel="stylesheet" href="css/login.css"> -->
+  
+<!-- </head> -->
+
+	<!-- <script src="JQuery/jquery.min.js"></script> -->
+
+	<!-- BOOTSTRAP CDN **REQUIRES INTERNET** -->
+	<link rel="stylesheet" href="{%static 'css/bootstrap_min.css' %}"><!-- Latest compiled and minified CSS -->
+	<script src="{%static 'js/jquery_min.js' %}"></script><!-- jQuery library -->
+	<script src="{%static 'js/popper_min.js' %}"></script><!-- Popper JS -->
+	<script src="{%static 'js/bootstrap_min.js' %}"></script><!-- Latest compiled JavaScript -->
+	
+	<!-- <link rel="stylesheet" href="JQuery/jquery-ui.css"> -->
+	<link rel="stylesheet" href="{%static 'css/login.css' %}">
+</head>
+
+<body>
+	<div class="container" id="logincontainer">
+        {% include 'messages.html' %}
+        {% block content %}
+        {% endblock %}
+		<img src="{%static 'assets/ss_logo.jpg'%}" id="loginimagelogo" style="width: 65%;">
+		<form action="login" method="GET">
+		   {% csrf_token %}
+		   <!-- {{form}} -->
+		    <div class="form-group" id="loginusername">
+			    <label for="email">Username:</label>
+			    <input type="text" class="form-control logininputbox" name = "username" id="loginusername" placeholder="Username">
+		    </div>
+
+
+		    <div class="form-group">
+		      <label for="pwd">Password:</label>
+		      <input type="password" class="form-control logininputbox" id="loginpwd" placeholder="Enter password" name="pswd">
+		    </div>
+		    <div class="form-group form-check">
+		      <label class="form-check-label">
+		        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+		      </label>
+		      <a href="#" style="margin-left: 10%; text-decoration: none; color: black;">Forgot Password?</a>
+		    </div>
+
+		    
+		    <button type="submit" class="btn btn-primary loginbtn">Login</button>
+	  	</form>
+	</div>
+</body>
+</html>
