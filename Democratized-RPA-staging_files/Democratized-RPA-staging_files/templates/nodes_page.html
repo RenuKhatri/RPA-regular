@@ -2863,6 +2863,574 @@ Extension <input id='extension' type='text' name='extension'> -->
 		</div>
 		<!-- Delete folder ends here -->
 
+		<!-- delete file on ftp server starts here  -->
+		<div id="modalOne_file_delete_ftp" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Delete File on FTP Server</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_file_delete_ftp_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_file_delete_ftp_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_file_delete_ftp_password">
+							</div>
+
+							<div>
+								<label><b>Enter Input File Path</b></label>
+								<input type="text" id="pop_file_delete_ftp_file_path">
+							</div>
+
+							<div>
+								<label><b>Enter File Name</b></label>
+								<input type="text" id="pop_file_delete_ftp_file_name">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_file_delete_ftp_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- delete file on ftp server ends here -->
+
+		<!-- download file from ftp server starts here -->
+		<div id="modalOne_file_download_ftp" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Download File from FTP Server</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_file_download_ftp_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_file_download_ftp_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_file_download_ftp_password">
+							</div>
+
+							<div>
+								<label><b>Enter Input File Path on FTP</b></label>
+								<input type="text" id="pop_file_download_ftp_file_path">
+							</div>
+
+							<div>
+								<label><b>Enter Output Local Path</b></label>
+								<input type="text" id="pop_file_download_ftp_local_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_file_download_ftp_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- download file from ftp server ends here -->
+
+		<!-- file rename on ftp server starts here -->
+		<div id="modalOne_file_rename_ftp" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Rename File on FTP Server</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_file_rename_ftp_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_file_rename_ftp_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_file_rename_ftp_password">
+							</div>
+
+							<div>
+								<label><b>Enter Input File Path</b></label>
+								<input type="text" id="pop_file_rename_ftp_file_path">
+							</div>
+
+							<div>
+								<label><b>Enter Current File Name</b></label>
+								<input type="text" id="pop_file_rename_ftp_file_name">
+							</div>
+
+							<div>
+								<label><b>Enter New File Name</b></label>
+								<input type="text" id="pop_file_rename_ftp_new_file">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_file_rename_ftp_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- file rename on ftp server ends here -->
+
+		<!-- upload file on ftp server starts here -->
+		<div id="modalOne_file_upload_ftp" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+		  			<a class="close">&times;</a>
+
+				 	<form class="form_popup" action="/">
+
+						<h2>Upload File on FTP Server</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_file_upload_ftp_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_file_upload_ftp_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_file_upload_ftp_password">
+							</div>
+
+							<div>
+								<label><b>Enter File Path</b></label>
+								<input type="text" id="pop_file_upload_ftp_file_path">
+							</div>
+
+							<div>
+								<label><b>Enter Output Server Path</b></label>
+								<input type="text" id="pop_file_upload_ftp_server_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_file_upload_ftp_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- upload file on ftp server ends here -->
+
+		<!-- delete folder on ftp server starts here -->
+		<div id="modalOne_folder_delete_ftp" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Delete Folder on FTP Server</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_folder_delete_ftp_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_folder_delete_ftp_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_folder_delete_ftp_password">
+							</div>
+
+							<div>
+								<label><b>Enter Folder Path</b></label>
+								<input type="text" id="pop_folder_delete_ftp_folder_path">
+							</div>
+
+							<div>
+								<label><b>Enter Folder Name</b></label>
+								<input type="text" id="pop_folder_delete_ftp_folder_name">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_folder_delete_ftp_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- delete folder on ftp server ends here -->
+
+		<!-- folder upload on ftp server starts here -->
+		<div id="modalOne_folder_upload_ftp" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Upload Folder on FTP Server</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_folder_upload_ftp_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_folder_upload_ftp_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_folder_upload_ftp_password">
+							</div>
+
+							<div>
+								<label><b>Enter Folder Path</b></label>
+								<input type="text" id="pop_folder_upload_ftp_path">
+							</div>
+
+							<div>
+								<label><b>Enter Output Server Path</b></label>
+								<input type="text" id="pop_folder_upload_ftp_server_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_folder_upload_ftp_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- folder upload on ftp server ends here -->
+
+		<!-- ftp connect starts here -->
+		<div id="modalOne_ftp_connect" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>FTP Connect</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_ftp_connect_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_ftp_connect_server_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_ftp_connect_server_password">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_ftp_connect_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- ftp connect ends here -->
+
+		<!-- ftp disconnect starts here -->
+		<div id="modalOne_ftp_disconnect" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>FTP Disconnect</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_ftp_disconnect_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_ftp_disconnect_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_ftp_disconnect_password">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_ftp_disconnect_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- ftp disconnect ends here -->
+
+		<!-- Secure FTP connection starts here -->
+		<div id="modalOne_ftp_secure" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Secure FTP Connection</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_secure_ftp_connection_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_secure_ftp_connection_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_secure_ftp_connection_password">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_secure_ftp_connection_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- Secure FTP connection ends here -->
+
+		<!-- FTP server connection starts here -->
+		<div id="modalOne_ftp_server_connection" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+					<a class="close">&times;</a>
+
+					 <form class="form_popup" action="/">
+
+						<h2>FTP Connection</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="btn_pop_ftp_server_connection_server_address">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_ftp_server_connection_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					  </form>
+
+				</div>
+			</div>
+		</div>
+		<!-- FTP server connection ends here -->
+
+		<!-- list ftp server directory starts here -->
+		<div id="modalOne_list_ftp_direct" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>List FTP Server Directory</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter FTP Server Address</b></label>
+								<input type="text" id="pop_list_ftp_direct_server_address">
+							</div>
+
+							<div>
+								<label><b>Enter Username</b></label>
+								<input type="text" id="pop_list_ftp_direct_username">
+							</div>
+
+							<div>
+								<label><b>Enter Password</b></label>
+								<input type="text" id="pop_list_ftp_direct_password">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_list_ftp_direct_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- list ftp server directory ends here -->
+
+		<!-- change directory starts here -->
+		<div id="modalOne_change_ftp_directory" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Change Directory</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_change_directory_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_change_directory_port_number">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_change_directory_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_change_directory_password">
+							</div>
+
+							<div>
+								<label><b>Enter directory</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_change_directory_enter_name">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_change_directory_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- change directory ends here -->
+
 <!--------------- FILE TRANSFER PROTOCOL POP-UPS ENDS HERE ------------------>
 
 
@@ -5768,122 +6336,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 		    <!-- FOLDER POP-UPS ENDS HERE -->
 
 		    <!-- FTP POP-UPS START HERE -->
-		    <div id="modalOne_change_ftp_directory" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		            </div>     
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will change the directory in the server.</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Change Directory</h2>
 
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the IP address of server.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the port number of server.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the username</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the password.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the output directory.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter directory</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">It will Open the File</span>
-		                          </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-		                  <input type="text" name="psw">
-
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label><b>This Action is Enable</b></label><br>
-
-		                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-		                  <input type="text">
-		                </div>
-		                  
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
 		    <div id="modalOne_create_ftp_directory" class="modal">
 		      <div class="modal-content">
 		        <div class="contact-form">
@@ -7617,1202 +8070,29 @@ Extension <input id='extension' type='text' name='extension'> -->
 					</div>
 					</div>
 
-					<!--delete file on ftp server  -->
 
-					<div id="modalOne_file_delete_ftp" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
 
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will delete file on FTP server</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">Delete File on FTP Server</h2>
 
-					    
 
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
 
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
 
-					           <input type="text">
 
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the username</span>
-					            </i>
-					          </div>
 
-					          <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
 
-					           <input type="text">
 
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the password</span>
-					            </i>
-					          </div>
 
-					          <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
 
-					           <input type="text">
-					          
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the location of file to be deleted on FTP server</span>
-					            </i>
-					          </div>
 
-					          <label style="position: relative;left: 0%;"><b>Enter Input File Path</b></label>
 
-					           <input type="text">
 
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the name of the file to be deleted</span>
-					            </i>
-					          </div>
 
-					          <label style="position: relative;left: 0%;"><b>Enter File Name</b></label>
 
-					           <input type="text">
 
-					        
 
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
 
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
 
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
 
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
 
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
-
-					<!--download file from ftp server -->
-
-					<div id="modalOne_file_download_ftp" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
-
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will Download file from FTP server</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">Download File from FTP Server</h2>
-
-					    
-
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the username</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the password</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
-
-					           <input type="text">
-					          
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the location of file to be downloaded from FTP server</span>
-					            </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Enter Input File Path on FTP</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the destination location on local machine where file will be saved</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Output Local Path</b></label>
-
-					           <input type="text">
-
-					        
-
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
-
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
-
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
-
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
-
-					<!-- file rename folder -->
-
-					<div id="modalOne_file_rename_ftp" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
-
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will rename file on FTP server</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">Rename File on FTP Server</h2>
-
-					    
-
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the username</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the password</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
-
-					           <input type="text">
-					          
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the location of file to be renamed on FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Input File Path</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the current name of the file to be renamed</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Current File Name</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the new name of the file </span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter New File Name</b></label>
-
-					           <input type="text">
-
-
-
-					        
-
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
-
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
-
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
-
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
-
-					<!--upload file on ftp  -->
-
-					<div id="modalOne_file_upload_ftp" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
-
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will upload file on FTP server</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">Upload File on FTP Server</h2>
-
-					    
-
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the username</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the password</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
-
-					           <input type="text">
-					          
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the file location on local machine</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter File Path</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the location on server where file will be uploaded</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Output Server Path</b></label>
-
-					           <input type="text">
-
-					        
-
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
-
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
-
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
-
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
-
-					<!--delete folder on ftp  -->
-
-					<div id="modalOne_folder_delete_ftp" class="modal">
-					  <div class="modal-content">
-					    <div class="contact-form">
-					      <a class="close">&times;</a>
-					           
-					      <div class="tab">
-					        <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					        <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					      </div>
-
-					     <form class="form_popup" action="/">
-					        <div class="tooltip">
-					        <i class="fa fa-info-circle">
-					          <span class="tooltiptext">It will delete folder on FTP server</span>
-					        </i>
-					        </div>
-					        <h2 style="margin: -30px 0 10px;">Delete Folder on FTP Server</h2>
-
-					        
-
-					        <div>
-					          <div class="1 tabcontent">
-					            <div>
-					              <h1>Action Input</h1>
-					              <div class="tooltip">
-					                <i class="fa fa-info-circle">
-					                  <span class="tooltiptext">Enter the address of FTP server</span>
-					                </i>
-					              </div>
-
-					              <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					               <input type="text">
-
-					               <div class="tooltip">
-					                <i class="fa fa-info-circle">
-					                  <span class="tooltiptext">Enter the username</span>
-					                </i>
-					              </div>
-
-					              <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
-
-					               <input type="text">
-
-					               <div class="tooltip">
-					                <i class="fa fa-info-circle">
-					                  <span class="tooltiptext">Enter the password</span>
-					                </i>
-					              </div>
-
-					              <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
-
-					               <input type="text">
-					              
-					              <div class="tooltip">
-					                <i class="fa fa-info-circle">
-					                  <span class="tooltiptext">Enter the location of folder on FTP server</span>
-					                </i>
-					              </div>
-
-					              <label style="position: relative;left: 0%;"><b>Enter Folder Path</b></label>
-
-					               <input type="text">
-
-					               <div class="tooltip">
-					                <i class="fa fa-info-circle">
-					                  <span class="tooltiptext">Enter the name of the folder to be deleted</span>
-					                </i>
-					              </div>
-
-					              <label style="position: relative;left: 0%;"><b>Enter Folder Name</b></label>
-
-					               <input type="text">
-
-					            
-
-					                <input type="checkbox" name="vehicle1" style="width: 10%;">
-					              <label > <b>Make Instance Invisible</b></label><br>
-					            </div>
-					            <div>
-					              <h1>Action Output</h1>
-					              <div class="tooltip">
-					                      <i class="fa fa-info-circle">
-					                        <span class="tooltiptext">Intermediate variable</span>
-					                      </i>
-					              </div>
-					              <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					              <input type="text" name="psw">
-					              <input type="checkbox" name="vehicle1" style="width: 10%;">
-					              <label > <b>This Action is Enable</b></label><br>
-
-					              <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					              <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					            </div>
-					          </div>
-					        </div>
-
-					        <div>
-					          <div class="2 tabcontent">
-					            <div>
-					              <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					              <input type="text">
-
-					              <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					              <input type="text">
-
-					              </div>
-					              
-					              <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					            </div>
-					          </div>
-					        </div>
-					      </form>
-					    </div>
-					  </div>
-					</div>
-
-
-					<!-- folder upload ftp -->
-
-					<div id="modalOne_folder_upload_ftp" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
-
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will upload folder on FTP server</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">Upload Folder on FTP Server</h2>
-
-					    
-
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the username</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the password</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
-
-					           <input type="text">
-					          
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the folder location on local machine</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Folder Path</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the location on server where folder will be uploaded</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Output Server Path</b></label>
-
-					           <input type="text">
-
-					        
-
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
-
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
-
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
-
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
-
-					<!-- ftp connect -->
-
-					<div id="modalOne_ftp_connect" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
-
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will implement FTP connect functionality</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">FTP Connect</h2>
-
-					    
-
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the username</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the password</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
-
-					           <input type="text">
-					        
-
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
-
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
-
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
-
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
-
-					<!-- ftp disconnect -->
-
-					<div id="modalOne_ftp_disconnect" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
-
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will implement FTP disconnect functionality</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">FTP Disconnect</h2>
-
-					    
-
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the username</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the password</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
-
-					           <input type="text">
-					        
-
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
-
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
-
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
-
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
-
-					<!-- ftp secure -->
-
-					<div id="modalOne_ftp_secure" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
-
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will establish secure FTP connection</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">Secure FTP Connection</h2>
-
-					    
-
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the username</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the password</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
-
-					           <input type="text">
-					        
-
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
-
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
-
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
-
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
-
-
-					<!-- ftp server -->
-
-					<div id="modalOne_ftp_server" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
-
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will establish FTP connection</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">FTP Connection</h2>
-
-					    
-
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					           <input type="text">
-					        
-
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
-
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
-
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
-
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
-
-					<!-- list ftp server directory -->
-
-					<div id="modalOne_list_ftp_direct" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
-					       
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
-
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will list directory of FTP Server</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">List FTP Server Directory</h2>
-
-					    
-
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the address of FTP server</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter FTP Server Address</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the username</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Username</b></label>
-
-					           <input type="text">
-
-					           <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the password</span>
-					            </i>
-					          </div>
-
-					          <label style="position: relative;left: 0%;"><b>Enter Password</b></label>
-
-					           <input type="text">
-					        
-
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
-
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
-
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
-
-					          </div>
-					          
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
 
 			    <!-- VASUDHA FTP ENDS -->
 
