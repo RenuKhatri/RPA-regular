@@ -436,6 +436,86 @@ window.addEventListener("load", () => {
 	const pop_change_directory_enter_name = document.querySelector("#pop_change_directory_enter_name");
     const btn_pop_change_directory_ok = document.querySelector("#btn_pop_change_directory_ok");
 
+     // Download single file from FTP
+	const pop_download_single_ftp_file_IP_address = document.querySelector("#pop_download_single_ftp_file_IP_address");
+	const pop_download_single_ftp_file_port_number = document.querySelector("#pop_download_single_ftp_file_port_number");
+	const pop_download_single_ftp_file_username = document.querySelector("#pop_download_single_ftp_file_username");
+	const pop_download_single_ftp_file_password = document.querySelector("#pop_download_single_ftp_file_password");
+	const pop_download_single_ftp_file_directory = document.querySelector("#pop_download_single_ftp_file_directory");
+	const pop_download_single_ftp_file_document = document.querySelector("#pop_download_single_ftp_file_document");
+	const pop_download_single_ftp_file_download_path = document.querySelector("#pop_download_single_ftp_file_download_path");
+    const btn_pop_download_single_ftp_file_ok = document.querySelector("#btn_pop_download_single_ftp_file_ok");
+
+    // Download multiple files from FTP
+	const pop_download_multiple_files_ftp_IP_address = document.querySelector("#pop_download_multiple_files_ftp_IP_address");
+	const pop_download_multiple_files_ftp_port_number = document.querySelector("#pop_download_multiple_files_ftp_port_number");
+	const pop_download_multiple_files_ftp_username = document.querySelector("#pop_download_multiple_files_ftp_username");
+	const pop_download_multiple_files_ftp_password = document.querySelector("#pop_download_multiple_files_ftp_password");
+	const pop_download_multiple_files_ftp_directory = document.querySelector("#pop_download_multiple_files_ftp_directory");
+	const pop_download_multiple_files_ftp_path = document.querySelector("#pop_download_multiple_files_ftp_path");
+    const btn_pop_download_multiple_files_ftp_ok = document.querySelector("#btn_pop_download_multiple_files_ftp_ok");
+
+    // Download multiple files from FTP
+	const pop_download_single_folder_ftp_IP_address = document.querySelector("#pop_download_single_folder_ftp_IP_address");
+	const pop_download_single_folder_ftp_port_number = document.querySelector("#pop_download_single_folder_ftp_port_number");
+	const pop_download_single_folder_ftp_username = document.querySelector("#pop_download_single_folder_ftp_username");
+	const pop_download_single_folder_ftp_password = document.querySelector("#pop_download_single_folder_ftp_password");
+	const pop_download_single_folder_ftp_directory = document.querySelector("#pop_download_single_folder_ftp_directory");
+	const pop_download_single_folder_ftp_path = document.querySelector("#pop_download_single_folder_ftp_path");
+    const btn_pop_download_single_folder_ftp_ok = document.querySelector("#btn_pop_download_single_folder_ftp_ok");
+
+    // Download multiple folders from FTP
+	const pop_download_multiple_ftp_folders_IP_address = document.querySelector("#pop_download_multiple_ftp_folders_IP_address");
+	const pop_download_multiple_ftp_folders_port_number = document.querySelector("#pop_download_multiple_ftp_folders_port_number");
+	const pop_download_multiple_ftp_folders_username = document.querySelector("#pop_download_multiple_ftp_folders_username");
+	const pop_download_multiple_ftp_folders_password = document.querySelector("#pop_download_multiple_ftp_folders_password");
+	const pop_download_multiple_ftp_folders_directory = document.querySelector("#pop_download_multiple_ftp_folders_directory");
+	const pop_download_multiple_ftp_folders_path = document.querySelector("#pop_download_multiple_ftp_folders_path");
+    const btn_pop_download_multiple_ftp_folders_ok = document.querySelector("#btn_pop_download_multiple_ftp_folders_ok");
+
+    // Upload single file to FTP
+	const pop_upload_single_ftp_file_IP_address = document.querySelector("#pop_upload_single_ftp_file_IP_address");
+	const pop_upload_single_ftp_file_port_number = document.querySelector("#pop_upload_single_ftp_file_port_number");
+	const pop_upload_single_ftp_file_username = document.querySelector("#pop_upload_single_ftp_file_username");
+	const pop_upload_single_ftp_file_password = document.querySelector("#pop_upload_single_ftp_file_password");
+	const pop_upload_single_ftp_file_directory = document.querySelector("#pop_upload_single_ftp_file_directory");
+	const pop_upload_single_ftp_file_path = document.querySelector("#pop_upload_single_ftp_file_path");
+    const btn_pop_upload_single_ftp_file_ok = document.querySelector("#btn_pop_upload_single_ftp_file_ok");
+
+    // Upload multiple files to FTP
+	const pop_upload_multiple_ftp_files_IP_address = document.querySelector("#pop_upload_multiple_ftp_files_IP_address");
+	const pop_upload_multiple_ftp_files_port_number = document.querySelector("#pop_upload_multiple_ftp_files_port_number");
+	const pop_upload_multiple_ftp_files_username = document.querySelector("#pop_upload_multiple_ftp_files_username");
+	const pop_upload_multiple_ftp_files_password = document.querySelector("#pop_upload_multiple_ftp_files_password");
+	const pop_upload_multiple_ftp_files_directory = document.querySelector("#pop_upload_multiple_ftp_files_directory");
+	const pop_upload_multiple_ftp_files_path = document.querySelector("#pop_upload_multiple_ftp_files_path");
+    const btn_pop_upload_multiple_ftp_files_ok = document.querySelector("#btn_pop_upload_multiple_ftp_files_ok");
+
+    // Upload single folder to FTP
+	const pop_upload_single_ftp_folder_IP_address = document.querySelector("#pop_upload_single_ftp_folder_IP_address");
+	const pop_upload_single_ftp_folder_port_number = document.querySelector("#pop_upload_single_ftp_folder_port_number");
+	const pop_upload_single_ftp_folder_username = document.querySelector("#pop_upload_single_ftp_folder_username");
+	const pop_upload_single_ftp_folder_password = document.querySelector("#pop_upload_single_ftp_folder_password");
+	const pop_upload_single_ftp_folder_directory = document.querySelector("#pop_upload_single_ftp_folder_directory");
+	const pop_upload_single_ftp_folder_path = document.querySelector("#pop_upload_single_ftp_folder_path");
+    const btn_pop_upload_single_ftp_folder_ok = document.querySelector("#btn_pop_upload_single_ftp_folder_ok");
+
+    // Upload multiple folders to FTP
+	const pop_upload_multiple_ftp_folders_IP_address = document.querySelector("#pop_upload_multiple_ftp_folders_IP_address");
+	const pop_upload_multiple_ftp_folders_port = document.querySelector("#pop_upload_multiple_ftp_folders_port");
+	const pop_upload_multiple_ftp_folders_username = document.querySelector("#pop_upload_multiple_ftp_folders_username");
+	const pop_upload_multiple_ftp_folders_password = document.querySelector("#pop_upload_multiple_ftp_folders_password");
+	const pop_upload_multiple_ftp_folders_directory = document.querySelector("#pop_upload_multiple_ftp_folders_directory");
+	const pop_upload_multiple_ftp_folders_path = document.querySelector("#pop_upload_multiple_ftp_folders_path");
+    const btn_pop_upload_multiple_ftp_folders_ok = document.querySelector("#btn_pop_upload_multiple_ftp_folders_ok");
+
+    // Upload multiple folders to FTP
+	const pop_delete_ftp_files_IP_address = document.querySelector("#pop_delete_ftp_files_IP_address");
+	const pop_delete_ftp_files_port = document.querySelector("#pop_delete_ftp_files_port");
+	const pop_delete_ftp_files_username = document.querySelector("#pop_delete_ftp_files_username");
+	const pop_delete_ftp_files_password = document.querySelector("#pop_delete_ftp_files_password");
+	const pop_delete_ftp_files_path = document.querySelector("#pop_delete_ftp_files_path");
+    const btn_pop_delete_ftp_files_ok = document.querySelector("#btn_pop_delete_ftp_files_ok");
 
 
 	// Extract Image
@@ -2855,7 +2935,85 @@ window.addEventListener("load", () => {
 		modal.style.display = "none";
 	}
 
+	function downloadSingleFTPFilePopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_download_single_ftp_file_IP_address.value, pop_download_single_ftp_file_port_number.value,
+		pop_download_single_ftp_file_username.value, pop_download_single_ftp_file_password.value, pop_download_single_ftp_file_directory.value,
+		pop_download_single_ftp_file_document.value, pop_download_single_ftp_file_download_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_download_single_ftp_file_ok.closest('.modal');
+		modal.style.display = "none";
+	}
 
+	function downloadMultipleFTPFilePopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_download_multiple_files_ftp_IP_address.value, pop_download_multiple_files_ftp_port_number.value,
+		pop_download_multiple_files_ftp_username.value, pop_download_multiple_files_ftp_password.value, pop_download_multiple_files_ftp_directory.value,
+		pop_download_multiple_files_ftp_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_download_multiple_files_ftp_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+    function downloadSingleFTPFolderPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_download_single_folder_ftp_IP_address.value, pop_download_single_folder_ftp_port_number.value,
+		pop_download_single_folder_ftp_username.value, pop_download_single_folder_ftp_password.value, pop_download_single_folder_ftp_directory.value,
+		pop_download_single_folder_ftp_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_download_single_folder_ftp_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+    function downloadMultipleFTPFoldersPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_download_multiple_ftp_folders_IP_address.value, pop_download_multiple_ftp_folders_port_number.value,
+		pop_download_multiple_ftp_folders_username.value, pop_download_multiple_ftp_folders_password.value, pop_download_multiple_ftp_folders_directory.value,
+		pop_download_multiple_ftp_folders_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_download_multiple_ftp_folders_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+    function uploadSingleFTPFilePopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_upload_single_ftp_file_IP_address.value, pop_upload_single_ftp_file_port_number.value,
+		pop_upload_single_ftp_file_username.value, pop_upload_single_ftp_file_password.value, pop_upload_single_ftp_file_directory.value,
+		pop_upload_single_ftp_file_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_upload_single_ftp_file_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+    function uploadMultipleFTPFilesPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_upload_multiple_ftp_files_IP_address.value, pop_upload_multiple_ftp_files_port_number.value,
+		pop_upload_multiple_ftp_files_username.value, pop_upload_multiple_ftp_files_password.value, pop_upload_multiple_ftp_files_directory.value,
+		pop_upload_multiple_ftp_files_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_upload_multiple_ftp_files_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function uploadSingleFTPFolderPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_upload_single_ftp_folder_IP_address.value, pop_upload_single_ftp_folder_port_number.value,
+		pop_upload_single_ftp_folder_username.value, pop_upload_single_ftp_folder_password.value, pop_upload_single_ftp_folder_directory.value,
+		pop_upload_single_ftp_folder_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_upload_single_ftp_folder_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function uploadMultipleFTPFoldersPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_upload_multiple_ftp_folders_IP_address.value, pop_upload_multiple_ftp_folders_port.value,
+		pop_upload_multiple_ftp_folders_username.value, pop_upload_multiple_ftp_folders_password.value, pop_upload_multiple_ftp_folders_directory.value,
+		pop_upload_multiple_ftp_folders_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_upload_multiple_ftp_folders_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function deleteFTPFilesPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_delete_ftp_files_IP_address.value, pop_delete_ftp_files_port.value,
+		pop_delete_ftp_files_username.value, pop_delete_ftp_files_password.value, pop_delete_ftp_files_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_delete_ftp_files_ok.closest('.modal');
+		modal.style.display = "none";
+	}
 
 
 
@@ -3191,8 +3349,35 @@ window.addEventListener("load", () => {
     // list FTP server directory
     btn_pop_list_ftp_direct_ok.addEventListener("click", listFTPServerDirectoryPopup, false);
 
-    // list FTP server directory
+    // change directory
     btn_pop_change_directory_ok.addEventListener("click", changeDirectoryPopup, false);
+
+    // download single file from FTP
+    btn_pop_download_single_ftp_file_ok.addEventListener("click", downloadSingleFTPFilePopup, false);
+
+    // download multiple file from FTP
+    btn_pop_download_multiple_files_ftp_ok.addEventListener("click", downloadMultipleFTPFilePopup, false);
+
+    // download single folder from FTP
+    btn_pop_download_single_folder_ftp_ok.addEventListener("click", downloadSingleFTPFolderPopup, false);
+
+    // download multiple folders from FTP
+    btn_pop_download_multiple_ftp_folders_ok.addEventListener("click", downloadMultipleFTPFoldersPopup, false);
+
+    // upload single file from FTP
+    btn_pop_upload_single_ftp_file_ok.addEventListener("click", uploadSingleFTPFilePopup, false);
+
+    // upload multiple files from FTP
+    btn_pop_upload_multiple_ftp_files_ok.addEventListener("click", uploadMultipleFTPFilesPopup, false);
+
+    // upload multiple files from FTP
+    btn_pop_upload_single_ftp_folder_ok.addEventListener("click", uploadSingleFTPFolderPopup, false);
+
+    // upload multiple folders from FTP
+    btn_pop_upload_multiple_ftp_folders_ok.addEventListener("click", uploadMultipleFTPFoldersPopup, false);
+
+    btn_pop_delete_ftp_files_ok.addEventListener("click", deleteFTPFilesPopup, false);
+
 
 	// Extract Image
 	btn_extract_image_ok.addEventListener("click", extractImagePopup, false);

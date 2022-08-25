@@ -3337,7 +3337,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 		</div>
 		<!-- FTP server connection ends here -->
 
-		<!-- list ftp server directory starts here -->
+		<!-- list FTP server directory starts here -->
 		<div id="modalOne_list_ftp_direct" class="modal">
 			<div class="modal-content">
 				<div class="contact-form">
@@ -3430,6 +3430,568 @@ Extension <input id='extension' type='text' name='extension'> -->
 			</div>
 		</div>
 		<!-- change directory ends here -->
+
+		<!-- download single file from FTP directory starts here -->
+		<div id="modalOne_download_single_ftp_file" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Download single file</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_port_number">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_password">
+							</div>
+
+							<div>
+								<label><b>Enter directory name</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_directory">
+							</div>
+
+							<div>
+								<label><b>Enter document name</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_document">
+							</div>
+
+							<div>
+								<label><b>Enter download path</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_download_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_download_single_ftp_file_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- download single file from FTP directory ends here -->
+
+		<!-- download multiple files from FTP directory starts here -->
+		<div id="modalOne_download_multiple_ftp_files" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Download multiple files</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_port_number">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_password">
+							</div>
+
+							<div>
+								<label><b>Enter directory name</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_directory">
+							</div>
+
+							<div>
+								<label><b>Enter download path</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_download_multiple_files_ftp_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- download multiple files from FTP directory ends here -->
+
+		<!-- download single folder from FTP directory starts here -->
+		<div id="modalOne_download_single_ftp_folder" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Download single folder</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_port_number">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_password">
+							</div>
+
+							<div>
+								<label><b>Enter directory name</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_directory">
+							</div>
+
+							<div>
+								<label><b>Enter download path</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_download_single_folder_ftp_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- download multiple folder from FTP directory ends here -->
+
+		<!-- download multiple folder from FTP directory starts here -->
+		<div id="modalOne_download_multiple_ftp_folders" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+			  		<a class="close">&times;</a>
+
+				  	<form class="form_popup" action="/">
+
+						<h2>Download multiple folders</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_port_number">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_password">
+							</div>
+
+							<div>
+								<label><b>Enter directory name</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_directory">
+							</div>
+
+							<div>
+								<label><b>Enter download path</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_download_multiple_ftp_folders_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+				  	</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- download multiple folder from FTP directory ends here -->
+
+		<!-- upload single file to FTP directory starts here -->
+		<div id="modalOne_upload_single_ftp_file" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Upload single file</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_port_number">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_password">
+							</div>
+
+							<div>
+								<label><b>Enter directory name</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_directory">
+							</div>
+
+							<div>
+								<label><b>Enter download path</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_upload_single_ftp_file_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- upload single file to FTP directory ends here -->
+
+		<!-- upload multiple files to FTP directory starts here -->
+		<div id="modalOne_upload_multiple_ftp_files" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Upload multiple files</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_port_number">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_password">
+							</div>
+
+							<div>
+								<label><b>Enter directory name</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_directory">
+							</div>
+
+							<div>
+								<label><b>Enter download path</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_upload_multiple_ftp_files_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- upload multiple files to FTP directory ends here -->
+
+		<!-- upload single folder to FTP directory starts here -->
+		<div id="modalOne_upload_single_ftp_folder" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Upload single folder</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_port_number">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_password">
+							</div>
+
+							<div>
+								<label><b>Enter directory name</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_directory">
+							</div>
+
+							<div>
+								<label><b>Enter download path</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_upload_single_ftp_folder_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- upload single folder to FTP directory ends here -->
+
+		<!-- upload multiple folders to FTP directory starts here -->
+		<div id="modalOne_upload_multiple_ftp_folders" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Upload multiple folders</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_port">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_password">
+							</div>
+
+							<div>
+								<label><b>Enter directory name</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_directory">
+							</div>
+
+							<div>
+								<label><b>Enter download path</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_upload_multiple_ftp_folders_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- upload single folders to FTP directory ends here -->
+
+		<!-- delete FTP file starts here -->
+		<div id="modalOne_delete_ftp_files" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Delete files</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_IP_address">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_port">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_username">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_password">
+							</div>
+
+							<div>
+								<label><b>Enter file path</b></label>
+								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_path">
+							</div>
+
+							<div>
+								<button type="button" class="btn" id="btn_pop_delete_ftp_files_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- delete FTP file ends here -->
+
+		<!-- rename FTP files starts here -->
+		<div id="modalOne_rename_ftp_file" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Rename files</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter IP address</b></label>
+								<input type="text" list="browsers" name="browser">
+							</div>
+
+							<div>
+								<label><b>Enter port number</b></label>
+								<input type="text" list="browsers" name="browser">
+							</div>
+
+							<div>
+								<label><b>Enter username</b></label>
+								<input type="text" list="browsers" name="browser">
+							</div>
+
+							<div>
+								<label><b>Enter password</b></label>
+								<input type="text" list="browsers" name="browser">
+							</div>
+
+							<div>
+								<label><b>Enter old directory name</b></label>
+								<input type="text" list="browsers" name="browser">
+							</div>
+
+							<div>
+								<label><b>Enter new directory name</b></label>
+								<input type="text" list="browsers" name="browser">
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- rename FTP files ends here -->
 
 <!--------------- FILE TRANSFER PROTOCOL POP-UPS ENDS HERE ------------------>
 
@@ -6574,654 +7136,11 @@ Extension <input id='extension' type='text' name='extension'> -->
 		        </div>
 		      </div>
 		    </div>
-		    <div id="modalOne_delete_ftp_files" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		            </div>     
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will delete the files.</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Delete files</h2>
 
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the IP address of server.</span>
-		                    </i>
-		                  </div>
 
-		                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-		                  <input type="text" list="browsers" name="browser">
 
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the port number of server.</span>
-		                    </i>
-		                  </div>
 
-		                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-		                  <input type="text" list="browsers" name="browser">
 
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the username</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the password.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the path of file.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter file path</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">It will Open the File</span>
-		                          </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-		                  <input type="text" name="psw">
-
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label><b>This Action is Enable</b></label><br>
-
-		                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-		                  <input type="text">
-
-		                </div>
-		                  
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-		    <div id="modalOne_download_multiple_ftp_files" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		            </div>     
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will download multiple files.</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Download multiple files</h2>
-
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the IP address of server.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the port number of server.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the username</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the password.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the output directory.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter directory name</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the download path.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter download path</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-
-
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">It will Open the File</span>
-		                          </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-		                  <input type="text" name="psw">
-
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label><b>This Action is Enable</b></label><br>
-
-		                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 7</b></label>
-		                  <input type="text">
-
-		                </div>
-		                  
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-		    <div id="modalOne_download_multiple_ftp_folders" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		            </div>     
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will download multiple folders.</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Download multiple folders</h2>
-
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the IP address of server.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the port number of server.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the username</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the password.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the output directory.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter directory name</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the download path.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter download path</b></label>
-		                  <input type="text" list="browsers" name="browser">
-
-
-
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">It will Open the File</span>
-		                          </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-		                  <input type="text" name="psw">
-
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label><b>This Action is Enable</b></label><br>
-
-		                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 7</b></label>
-		                  <input type="text">
-
-		                </div>
-		                  
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-			<div id="modalOne_download_single_ftp_file" class="modal">
-			      <div class="modal-content">
-			        <div class="contact-form">
-			          <a class="close">&times;</a>
-			            <div class="tab">
-			              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-			              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-			            </div>     
-			          <form class="form_popup" action="/">
-			            <div class="tooltip">
-			            <i class="fa fa-info-circle">
-			              <span class="tooltiptext">It will download single file.</span>
-			            </i>
-			            </div>
-			            <h2 style="margin: -30px 0 10px;">Download single file</h2>
-
-			            <div>
-			              <div class="1 tabcontent">
-			                <div>
-			                  <h1>Action Input</h1>
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the IP address of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the port number of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the username</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the password.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the output directory.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter directory name</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the document name.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter document name</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the download path.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter download path</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-
-
-			                <div>
-			                  <h1>Action Output</h1>
-			                  <div class="tooltip">
-			                          <i class="fa fa-info-circle">
-			                            <span class="tooltiptext">It will Open the File</span>
-			                          </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-			                  <input type="text" name="psw">
-
-			                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-			                  <label><b>This Action is Enable</b></label><br>
-
-			                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-
-			            <div>
-			              <div class="2 tabcontent">
-			                <div>
-			                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 7</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 8</b></label>
-			                  <input type="text">
-			                </div>
-			                  
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-			        </div>
-			      </div>
-			    </div>
-				<div id="modalOne_download_single_ftp_folder" class="modal">
-				      <div class="modal-content">
-				        <div class="contact-form">
-				          <a class="close">&times;</a>
-				            <div class="tab">
-				              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-				              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-				            </div>     
-				          <form class="form_popup" action="/">
-				            <div class="tooltip">
-				            <i class="fa fa-info-circle">
-				              <span class="tooltiptext">It will download single folder.</span>
-				            </i>
-				            </div>
-				            <h2 style="margin: -30px 0 10px;">Download single folder</h2>
-
-				            <div>
-				              <div class="1 tabcontent">
-				                <div>
-				                  <h1>Action Input</h1>
-				                  <div class="tooltip">
-				                    <i class="fa fa-info-circle">
-				                      <span class="tooltiptext">Enter the IP address of server.</span>
-				                    </i>
-				                  </div>
-
-				                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-				                  <input type="text" list="browsers" name="browser">
-
-				                  <div class="tooltip">
-				                    <i class="fa fa-info-circle">
-				                      <span class="tooltiptext">Enter the port number of server.</span>
-				                    </i>
-				                  </div>
-
-				                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-				                  <input type="text" list="browsers" name="browser">
-
-				                  <div class="tooltip">
-				                    <i class="fa fa-info-circle">
-				                      <span class="tooltiptext">Enter the username</span>
-				                    </i>
-				                  </div>
-
-				                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-				                  <input type="text" list="browsers" name="browser">
-
-				                  <div class="tooltip">
-				                    <i class="fa fa-info-circle">
-				                      <span class="tooltiptext">Enter the password.</span>
-				                    </i>
-				                  </div>
-
-				                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-				                  <input type="text" list="browsers" name="browser">
-
-				                  <div class="tooltip">
-				                    <i class="fa fa-info-circle">
-				                      <span class="tooltiptext">Enter the output directory.</span>
-				                    </i>
-				                  </div>
-
-				                  <label style="position: relative;left: 0%;"><b>Enter directory name</b></label>
-				                  <input type="text" list="browsers" name="browser">
-
-				                  <div class="tooltip">
-				                    <i class="fa fa-info-circle">
-				                      <span class="tooltiptext">Enter the download path.</span>
-				                    </i>
-				                  </div>
-
-				                  <label style="position: relative;left: 0%;"><b>Enter download path</b></label>
-				                  <input type="text" list="browsers" name="browser">
-
-
-
-				                <div>
-				                  <h1>Action Output</h1>
-				                  <div class="tooltip">
-				                          <i class="fa fa-info-circle">
-				                            <span class="tooltiptext">It will Open the File</span>
-				                          </i>
-				                  </div>
-
-				                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-				                  <input type="text" name="psw">
-
-				                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-				                  <label><b>This Action is Enable</b></label><br>
-
-				                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-				                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-				                </div>
-				              </div>
-				            </div>
-
-				            <div>
-				              <div class="2 tabcontent">
-				                <div>
-				                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-				                  <input type="text">
-
-				                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-				                  <input type="text">
-
-				                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-				                  <input type="text">
-
-				                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-				                  <input type="text">
-
-				                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-				                  <input type="text">
-
-				                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-				                  <input type="text">
-
-				                  <label style="position: relative;left:0%;"><b>Exception 7</b></label>
-				                  <input type="text">
-
-				                </div>
-				                  
-				                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-				                </div>
-				              </div>
-				            </div>
-				          </form>
-				        </div>
-				      </div>
-				    </div>
 				<div id="modalOne_invoke_ftp" class="modal">
 				      <div class="modal-content">
 				        <div class="contact-form">
@@ -7339,654 +7258,11 @@ Extension <input id='extension' type='text' name='extension'> -->
 				        </div>
 				      </div>
 				    </div>
-				    <div id="modalOne_rename_ftp_file" class="modal">
-			      <div class="modal-content">
-			        <div class="contact-form">
-			          <a class="close">&times;</a>
-			            <div class="tab">
-			              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-			              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-			            </div>     
-			          <form class="form_popup" action="/">
-			            <div class="tooltip">
-			            <i class="fa fa-info-circle">
-			              <span class="tooltiptext">It will rename the files.</span>
-			            </i>
-			            </div>
-			            <h2 style="margin: -30px 0 10px;">Rename files</h2>
 
-			            <div>
-			              <div class="1 tabcontent">
-			                <div>
-			                  <h1>Action Input</h1>
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the IP address of server.</span>
-			                    </i>
-			                  </div>
 
-			                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-			                  <input type="text" list="browsers" name="browser">
 
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the port number of server.</span>
-			                    </i>
-			                  </div>
 
-			                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-			                  <input type="text" list="browsers" name="browser">
 
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the username</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the password.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter directory's old name.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter old directory name</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter directory's new name.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter new directory name</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  
-			                <div>
-			                  <h1>Action Output</h1>
-			                  <div class="tooltip">
-			                          <i class="fa fa-info-circle">
-			                            <span class="tooltiptext">It will Open the File</span>
-			                          </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-			                  <input type="text" name="psw">
-
-			                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-			                  <label><b>This Action is Enable</b></label><br>
-
-			                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-
-			            <div>
-			              <div class="2 tabcontent">
-			                <div>
-			                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 7</b></label>
-			                  <input type="text">
-
-			                </div>
-			                  
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-			        </div>
-			      </div>
-			    </div>
-			    <div id="modalOne_upload_multiple_ftp_files" class="modal">
-			      <div class="modal-content">
-			        <div class="contact-form">
-			          <a class="close">&times;</a>
-			            <div class="tab">
-			              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-			              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-			            </div>     
-			          <form class="form_popup" action="/">
-			            <div class="tooltip">
-			            <i class="fa fa-info-circle">
-			              <span class="tooltiptext">It will upload multiple files.</span>
-			            </i>
-			            </div>
-			            <h2 style="margin: -30px 0 10px;">Upload multiple files</h2>
-
-			            <div>
-			              <div class="1 tabcontent">
-			                <div>
-			                  <h1>Action Input</h1>
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the IP address of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the port number of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the username</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the password.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the output directory.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter directory name</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the download path.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter download path</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-
-
-			                <div>
-			                  <h1>Action Output</h1>
-			                  <div class="tooltip">
-			                          <i class="fa fa-info-circle">
-			                            <span class="tooltiptext">It will Open the File</span>
-			                          </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-			                  <input type="text" name="psw">
-
-			                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-			                  <label><b>This Action is Enable</b></label><br>
-
-			                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-
-			            <div>
-			              <div class="2 tabcontent">
-			                <div>
-			                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 7</b></label>
-			                  <input type="text">
-
-			                </div>
-			                  
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-			        </div>
-			      </div>
-			    </div>
-			    <div id="modalOne_upload_multiple_ftp_folders" class="modal">
-			      <div class="modal-content">
-			        <div class="contact-form">
-			          <a class="close">&times;</a>
-			            <div class="tab">
-			              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-			              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-			            </div>     
-			          <form class="form_popup" action="/">
-			            <div class="tooltip">
-			            <i class="fa fa-info-circle">
-			              <span class="tooltiptext">It will upload multiple folders.</span>
-			            </i>
-			            </div>
-			            <h2 style="margin: -30px 0 10px;">Upload multiple folders</h2>
-
-			            <div>
-			              <div class="1 tabcontent">
-			                <div>
-			                  <h1>Action Input</h1>
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the IP address of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the port number of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the username</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the password.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the output directory.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter directory name</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the download path.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter download path</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-
-
-			                <div>
-			                  <h1>Action Output</h1>
-			                  <div class="tooltip">
-			                          <i class="fa fa-info-circle">
-			                            <span class="tooltiptext">It will Open the File</span>
-			                          </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-			                  <input type="text" name="psw">
-
-			                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-			                  <label><b>This Action is Enable</b></label><br>
-
-			                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-
-			            <div>
-			              <div class="2 tabcontent">
-			                <div>
-			                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 7</b></label>
-			                  <input type="text">
-
-			                </div>
-			                  
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-			        </div>
-			      </div>
-			    </div>
-			    <div id="modalOne_upload_single_ftp_file" class="modal">
-			      <div class="modal-content">
-			        <div class="contact-form">
-			          <a class="close">&times;</a>
-			            <div class="tab">
-			              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-			              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-			            </div>     
-			          <form class="form_popup" action="/">
-			            <div class="tooltip">
-			            <i class="fa fa-info-circle">
-			              <span class="tooltiptext">It will upload single file.</span>
-			            </i>
-			            </div>
-			            <h2 style="margin: -30px 0 10px;">Upload single file</h2>
-
-			            <div>
-			              <div class="1 tabcontent">
-			                <div>
-			                  <h1>Action Input</h1>
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the IP address of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the port number of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the username</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the password.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the output directory.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter directory name</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the download path.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter download path</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-
-
-			                <div>
-			                  <h1>Action Output</h1>
-			                  <div class="tooltip">
-			                          <i class="fa fa-info-circle">
-			                            <span class="tooltiptext">It will Open the File</span>
-			                          </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-			                  <input type="text" name="psw">
-
-			                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-			                  <label><b>This Action is Enable</b></label><br>
-
-			                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-
-			            <div>
-			              <div class="2 tabcontent">
-			                <div>
-			                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 5</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 6</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 7</b></label>
-			                  <input type="text">
-
-			                </div>
-			                  
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-			        </div>
-			      </div>
-			    </div>
-			    <div id="modalOne_upload_single_ftp_folder" class="modal">
-			      <div class="modal-content">
-			        <div class="contact-form">
-			          <a class="close">&times;</a>
-			            <div class="tab">
-			              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-			              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-			            </div>     
-			          <form class="form_popup" action="/">
-			            <div class="tooltip">
-			            <i class="fa fa-info-circle">
-			              <span class="tooltiptext">It will upload single folder.</span>
-			            </i>
-			            </div>
-			            <h2 style="margin: -30px 0 10px;">Upload single folder</h2>
-
-			            <div>
-			              <div class="1 tabcontent">
-			                <div>
-			                  <h1>Action Input</h1>
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the IP address of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter IP address</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the port number of server.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter port number</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the username</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter username</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the password.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter password</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the output directory.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter directory name</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the download path.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Enter download path</b></label>
-			                  <input type="text" list="browsers" name="browser">
-
-
-
-			                <div>
-			                  <h1>Action Output</h1>
-			                  <div class="tooltip">
-			                          <i class="fa fa-info-circle">
-			                            <span class="tooltiptext">It will Open the File</span>
-			                          </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-			                  <input type="text" name="psw">
-
-			                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-			                  <label><b>This Action is Enable</b></label><br>
-
-			                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-
-			            <div>
-			              <div class="2 tabcontent">
-			                <div>
-								<label style="position: relative;left:0%;"><b>Exception 1</b></label>
-								<input type="text">
-
-								<label style="position: relative;left:0%;"><b>Exception 2</b></label>
-								<input type="text">
-
-								<label style="position: relative;left:0%;"><b>Exception 3</b></label>
-								<input type="text">
-
-								<label style="position: relative;left:0%;"><b>Exception 4</b></label>
-								<input type="text">
-
-								<label style="position: relative;left:0%;"><b>Exception 5</b></label>
-								<input type="text">
-
-								<label style="position: relative;left:0%;"><b>Exception 6</b></label>
-								<input type="text">
-
-								<label style="position: relative;left:0%;"><b>Exception 7</b></label>
-								<input type="text">
-			                </div>
-			                  
-			                 <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-			        </div>
-			      </div>
-			    </div>
 			    <!-- VASUDHA FTP -->
 
 
