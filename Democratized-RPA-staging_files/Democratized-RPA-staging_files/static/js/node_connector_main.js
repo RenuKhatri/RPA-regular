@@ -517,6 +517,97 @@ window.addEventListener("load", () => {
 	const pop_delete_ftp_files_path = document.querySelector("#pop_delete_ftp_files_path");
     const btn_pop_delete_ftp_files_ok = document.querySelector("#btn_pop_delete_ftp_files_ok");
 
+    // Delete FTP files
+	const pop_rename_ftp_file_IP_address = document.querySelector("#pop_rename_ftp_file_IP_address");
+	const pop_rename_ftp_file_port_number = document.querySelector("#pop_rename_ftp_file_port_number");
+	const pop_rename_ftp_file_username = document.querySelector("#pop_rename_ftp_file_username");
+	const pop_rename_ftp_file_password = document.querySelector("#pop_rename_ftp_file_password");
+	const pop_rename_ftp_file_old_directory = document.querySelector("#pop_rename_ftp_file_old_directory");
+	const pop_rename_ftp_file_directory = document.querySelector("#pop_rename_ftp_file_directory");
+    const btn_pop_rename_ftp_file_ok = document.querySelector("#btn_pop_rename_ftp_file_ok");
+
+    // Create FTP directory
+	const pop_create_ftp_directory_IP_address = document.querySelector("#pop_create_ftp_directory_IP_address");
+	const pop_create_ftp_directory_port_number = document.querySelector("#pop_create_ftp_directory_port_number");
+	const pop_create_ftp_directory_username = document.querySelector("#pop_create_ftp_directory_username");
+	const pop_create_ftp_directory_password = document.querySelector("#pop_create_ftp_directory_password");
+	const pop_create_ftp_directory_name = document.querySelector("#pop_create_ftp_directory_name");
+    const btn_pop_create_ftp_directory_ok = document.querySelector("#btn_pop_create_ftp_directory_ok");
+
+    // Delete FTP directory
+	const pop_delete_ftp_directory_IP_address = document.querySelector("#pop_delete_ftp_directory_IP_address");
+	const pop_delete_ftp_directory_port_number = document.querySelector("#pop_delete_ftp_directory_port_number");
+	const pop_delete_ftp_directory_username = document.querySelector("#pop_delete_ftp_directory_username");
+	const pop_delete_ftp_directory_password = document.querySelector("#pop_delete_ftp_directory_password");
+	const pop_delete_ftp_directory_name = document.querySelector("#pop_delete_ftp_directory_name");
+    const btn_pop_delete_ftp_directory_ok = document.querySelector("#btn_pop_delete_ftp_directory_ok");
+
+    // Invoke FTP command
+	const pop_invoke_ftp_IP_address = document.querySelector("#pop_invoke_ftp_IP_address");
+	const pop_invoke_ftp_port_number = document.querySelector("#pop_invoke_ftp_port_number");
+	const pop_invoke_ftp_username = document.querySelector("#pop_invoke_ftp_username");
+	const pop_invoke_ftp_password = document.querySelector("#pop_invoke_ftp_password");
+	const pop_invoke_ftp_input_command = document.querySelector("#pop_invoke_ftp_input_command");
+    const btn_pop_invoke_ftp_ok = document.querySelector("#btn_pop_invoke_ftp_ok");
+
+    // Create new file
+	const pop_create_new_file_extension = document.querySelector("#pop_create_new_file_extension");
+    const btn_pop_create_new_file_ok = document.querySelector("#btn_pop_create_new_file_ok");
+
+    // Copy files
+	const pop_copy_files_source_path = document.querySelector("#pop_copy_files_source_path");
+	const pop_copy_files_destination_path = document.querySelector("#pop_copy_files_destination_path");
+    const btn_pop_copy_files_ok = document.querySelector("#btn_pop_copy_files_ok");
+
+    // Move files
+	const pop_move_files_source_path = document.querySelector("#pop_move_files_source_path");
+	const pop_move_files_destination_path = document.querySelector("#pop_move_files_destination_path");
+    const btn_pop_move_files_ok = document.querySelector("#btn_pop_move_files_ok");
+
+    // Rename files
+	const pop_rename_files_source_path = document.querySelector("#pop_rename_files_source_path");
+	const pop_rename_files_old_name = document.querySelector("#pop_rename_files_old_name");
+	const pop_rename_files_new_name = document.querySelector("#pop_rename_files_new_name");
+    const btn_pop_rename_files_ok = document.querySelector("#btn_pop_rename_files_ok");
+
+    // Delete files
+	const pop_delete_file_source_path = document.querySelector("#pop_delete_file_source_path");
+    const btn_pop_delete_files_ok = document.querySelector("#btn_pop_delete_files_ok");
+
+    // Delete temporary files
+	const pop_delete_temporary_files_source_path = document.querySelector("#pop_delete_temporary_files_source_path");
+    const btn_pop_delete_temporary_files_ok = document.querySelector("#btn_pop_delete_temporary_files_ok");
+
+    // Create shortcut files
+	const pop_create_file_shortcut_select_file = document.querySelector("#pop_create_file_shortcut_select_file");
+    const btn_pop_create_file_shortcut_ok = document.querySelector("#btn_pop_create_file_shortcut_ok");
+
+    // Get files part
+	const pop_get_file_part_select_file = document.querySelector("#pop_get_file_part_select_file");
+    const btn_pop_get_file_part_ok = document.querySelector("#btn_pop_get_file_part_ok");
+
+    // Print file
+	const pop_print_file_source_path = document.querySelector("#pop_print_file_source_path");
+    const btn_pop_print_file_ok = document.querySelector("#btn_pop_print_file_ok");
+
+    // Print multiple files
+	const pop_print_files_source_path = document.querySelector("#pop_print_files_source_path");
+    const btn_pop_print_files_ok = document.querySelector("#btn_pop_print_files_ok");
+
+    // Open folder
+	const pop_open_folder_path = document.querySelector("#pop_open_folder_path");
+    const btn_pop_open_folder_ok = document.querySelector("#btn_pop_open_folder_ok");
+
+    // Create folder
+	const pop_create_folder_path = document.querySelector("#pop_create_folder_path");
+	const pop_create_folder_name = document.querySelector("#pop_create_folder_name");
+    const btn_pop_create_folder_ok = document.querySelector("#btn_pop_create_folder_ok");
+
+    // Copy folder
+	const pop_copy_folder_source_path = document.querySelector("#pop_copy_folder_source_path");
+	const pop_copy_folder_destination_path = document.querySelector("#pop_copy_folder_destination_path");
+    const btn_pop_copy_folder_ok = document.querySelector("#btn_pop_copy_folder_ok");
+
 
 	// Extract Image
 	const pop_extract_image_url = document.querySelector("#pop_extract_image_url");
@@ -3015,6 +3106,130 @@ window.addEventListener("load", () => {
 		modal.style.display = "none";
 	}
 
+	function renameFTPFilesPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_rename_ftp_file_IP_address.value, pop_rename_ftp_file_port_number.value,
+		pop_rename_ftp_file_username.value, pop_rename_ftp_file_password.value, pop_rename_ftp_file_old_directory.value, pop_rename_ftp_file_directory.value]));
+		console.log(popupArray);
+		var modal = btn_pop_rename_ftp_file_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function createFTPDirectoryPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_create_ftp_directory_IP_address.value, pop_create_ftp_directory_port_number.value,
+		pop_create_ftp_directory_username.value, pop_create_ftp_directory_password.value, pop_create_ftp_directory_name.value]));
+		console.log(popupArray);
+		var modal = btn_pop_create_ftp_directory_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function deleteFTPDirectoryPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_delete_ftp_directory_IP_address.value, pop_delete_ftp_directory_port_number.value,
+		pop_delete_ftp_directory_username.value, pop_delete_ftp_directory_password.value, pop_delete_ftp_directory_name.value]));
+		console.log(popupArray);
+		var modal = btn_pop_delete_ftp_directory_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function invokeFTPCommandPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_invoke_ftp_IP_address.value, pop_invoke_ftp_port_number.value,
+		pop_invoke_ftp_username.value, pop_invoke_ftp_password.value, pop_invoke_ftp_input_command.value]));
+		console.log(popupArray);
+		var modal = btn_pop_invoke_ftp_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function createNewFilePopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_create_new_file_extension.value]));
+		console.log(popupArray);
+		var modal = btn_pop_create_new_file_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function copyFilesPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_copy_files_source_path.value, pop_copy_files_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_copy_files_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function moveFilesPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_move_files_source_path.value, pop_move_files_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_move_files_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function renameFilesPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_rename_files_source_path.value, pop_rename_files_old_name.value,
+		pop_rename_files_new_name.value]));
+		console.log(popupArray);
+		var modal = btn_pop_rename_files_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function deleteFilePopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_delete_file_source_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_delete_file_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function deleteTemporaryFilesPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_delete_temporary_files_source_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_delete_temporary_files_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function createFilesShortcutPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_create_file_shortcut_select_file.value]));
+		console.log(popupArray);
+		var modal = btn_pop_create_file_shortcut_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function getFilesPartPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_get_file_part_select_file.value]));
+		console.log(popupArray);
+		var modal = btn_pop_get_file_part_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function printFilePopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_print_file_source_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_print_file_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function printMultipleFilesPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_print_files_source_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_print_files_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function openFolderPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_open_folder_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_open_folder_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function createFolderPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_create_folder_path.value, pop_create_folder_name.value]));
+		console.log(popupArray);
+		var modal = btn_pop_create_folder_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function copyFolderPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_copy_folder_source_path.value, pop_copy_folder_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_copy_folder_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
 
 
 	function extractImagePopup(){
@@ -3376,7 +3591,56 @@ window.addEventListener("load", () => {
     // upload multiple folders from FTP
     btn_pop_upload_multiple_ftp_folders_ok.addEventListener("click", uploadMultipleFTPFoldersPopup, false);
 
+    // delete FTP files
     btn_pop_delete_ftp_files_ok.addEventListener("click", deleteFTPFilesPopup, false);
+
+    // rename FTP files
+    btn_pop_rename_ftp_file_ok.addEventListener("click", renameFTPFilesPopup, false);
+
+    // delete FTP directory
+    btn_pop_delete_ftp_directory_ok.addEventListener("click", renameFTPFilesPopup, false);
+
+    // invoke FTP directory
+    btn_pop_invoke_ftp_ok.addEventListener("click", invokeFTPDirectoryPopup, false);
+
+    // create new file
+    btn_pop_create_new_file_ok.addEventListener("click", createNewFilePopup, false);
+
+    // copy files
+    btn_pop_copy_files_ok.addEventListener("click", copyFilesPopup, false);
+
+    // move files
+    btn_pop_move_files_ok.addEventListener("click", moveFilesPopup, false);
+
+    // Rename files
+    btn_pop_rename_files_ok.addEventListener("click", renameFilesPopup, false);
+
+    // Delete file
+    btn_pop_delete_file_ok.addEventListener("click", deleteFilePopup, false);
+
+    // Delete temporary files
+    btn_pop_delete_temporary_files_ok.addEventListener("click", deleteTemporaryFilesPopup, false);
+
+    // Create files shortcut
+    btn_pop_create_file_shortcut_ok.addEventListener("click", createFilesShortcutPopup, false);
+
+    // Get files part
+    btn_pop_get_file_part_ok.addEventListener("click", getFilesPartPopup, false);
+
+    // Print file
+    btn_pop_print_file_ok.addEventListener("click", printFilePopup, false);
+
+    // Print multiple files
+    btn_pop_print_files_ok.addEventListener("click", printMultipleFilesPopup, false);
+
+    // Open folder
+    btn_pop_open_folder_ok.addEventListener("click", openFolderPopup, false);
+
+    // Create folder
+    btn_pop_create_folder_ok.addEventListener("click", createFolderPopup, false);
+
+    // Copy folder
+    btn_pop_copy_folder_ok.addEventListener("click", copyFolderPopup, false);
 
 
 	// Extract Image
