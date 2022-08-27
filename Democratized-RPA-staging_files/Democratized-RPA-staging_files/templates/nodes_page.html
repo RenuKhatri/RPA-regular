@@ -4500,169 +4500,78 @@ Extension <input id='extension' type='text' name='extension'> -->
 		</div>
 		<!-- Print files ends here -->
 
+		<!-- Zip files starts here -->
 		<div id="modalOne_zip_file" class="modal">
-		  <div class="modal-content">
-			<div class="contact-form">
-			  <a class="close">&times;</a>
-				<div class="tab">
-				  <button class="tablinks" onclick="openCity(event, '1')">General</button>
-				  <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Zip file</h2>
+
+						<div>
+
+							<div>
+								<label><b>Select file</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_zip_file_select_file">
+							</div>
+
+							<div>
+								<label><b>Select location</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_zip_file_select_location">
+							</div>
+
+							<div>
+								<button type="button" class="btn" id="btn_pop_zip_file_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
 				</div>
-			  <form class="form_popup" action="/">
-				<div class="tooltip">
-				<i class="fa fa-info-circle">
-				  <span class="tooltiptext">It will zip the file selected.</span>
-				</i>
-				</div>
-				<h2 style="margin: -30px 0 10px;">Zip file</h2>
-
-				<div>
-				  <div class="1 tabcontent">
-					<div>
-					  <h1>Action Input</h1>
-					  <div class="tooltip">
-						<i class="fa fa-info-circle">
-						  <span class="tooltiptext">Select the file which is to be zipped.</span>
-						</i>
-					  </div>
-
-					  <label style="position: relative;left: 0%;"><b>Select file</b></label>
-					  <input type="file" list="browsers" name="browser">
-
-					   <div class="tooltip">
-						<i class="fa fa-info-circle">
-						  <span class="tooltiptext">Select the location of file where file is to be zipped.</span>
-						</i>
-					  </div>
-
-					  <label style="position: relative;left: 0%;"><b>Select location</b></label>
-					  <input type="file" list="browsers" name="browser">
-
-
-					<div>
-					  <h1>Action Output</h1>
-					  <div class="tooltip">
-							  <i class="fa fa-info-circle">
-								<span class="tooltiptext">It will Open the Excel File</span>
-							  </i>
-					  </div>
-
-					  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-					  <input type="text" name="psw">
-
-					  <input type="checkbox" name="vehicle1" style="width: 10%;">
-					  <label><b>This Action is Enable</b></label><br>
-
-					  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-					  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					</div>
-				  </div>
-				</div>
-
-				<div>
-				  <div class="2 tabcontent">
-					<div>
-					  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-					  <input type="text">
-
-					  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-					  <input type="text">
-
-					  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-					  <input type="text">
-
-
-					</div>
-
-					  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					</div>
-				  </div>
-				</div>
-			  </form>
 			</div>
-		  </div>
 		</div>
+		<!-- Zip files ends here -->
 
+		<!-- Unzip files starts here -->
 		<div id="modalOne_unzip_file" class="modal">
-		  <div class="modal-content">
-			<div class="contact-form">
-			  <a class="close">&times;</a>
-				<div class="tab">
-				  <button class="tablinks" onclick="openCity(event, '1')">General</button>
-				  <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
+			<div class="modal-content">
+				<div class="contact-form">
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Unzip file</h2>
+
+						<div>
+
+							<div>
+								<label><b>Select file</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_unzip_file_select_file">
+							</div>
+
+							<div>
+								<label><b>Select location</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_unzip_file_select_location">
+							</div>
+
+							<div>
+								<button type="button" class="btn" id="btn_pop_unzip_file_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
 				</div>
-			  <form class="form_popup" action="/">
-				<div class="tooltip">
-				<i class="fa fa-info-circle">
-				  <span class="tooltiptext">It will unzip the file selected.</span>
-				</i>
-				</div>
-				<h2 style="margin: -30px 0 10px;">Unzip file</h2>
-
-				<div>
-				  <div class="1 tabcontent">
-					<div>
-					  <h1>Action Input</h1>
-					  <div class="tooltip">
-						<i class="fa fa-info-circle">
-						  <span class="tooltiptext">Select the file which is to be unzipped.</span>
-						</i>
-					  </div>
-
-					  <label style="position: relative;left: 0%;"><b>Select file</b></label>
-					  <input type="file" list="browsers" name="browser">
-
-					   <div class="tooltip">
-						<i class="fa fa-info-circle">
-						  <span class="tooltiptext">Select the location of file where file is to be unzipped.</span>
-						</i>
-					  </div>
-
-					  <label style="position: relative;left: 0%;"><b>Select location</b></label>
-					  <input type="file" list="browsers" name="browser">
-
-
-					<div>
-					  <h1>Action Output</h1>
-					  <div class="tooltip">
-							  <i class="fa fa-info-circle">
-								<span class="tooltiptext">It will Open the Excel File</span>
-							  </i>
-					  </div>
-
-					  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-					  <input type="text" name="psw">
-
-					  <input type="checkbox" name="vehicle1" style="width: 10%;">
-					  <label><b>This Action is Enable</b></label><br>
-
-					  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-					  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					</div>
-				  </div>
-				</div>
-
-				<div>
-				  <div class="2 tabcontent">
-					<div>
-					  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-					  <input type="text">
-
-					  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-					  <input type="text">
-
-					  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-					  <input type="text">
-					</div>
-
-					  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					</div>
-				  </div>
-				</div>
-			  </form>
 			</div>
-		  </div>
 		</div>
+		<!-- Unzip files ends here -->
 
 <!--------------- FILE POP-UPS ENDS HERE ------------------>
 
@@ -4775,403 +4684,273 @@ Extension <input id='extension' type='text' name='extension'> -->
 		</div>
 		<!-- Copy folder ends here -->
 
-		    <div id="modalOne_create_shortcut" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-
-		          <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		            </div>
-
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will ceate shortcut of a folder</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Create Folder Shortcut</h2>
-
-
-
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the location of folder</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter Folder Path</b></label>
-
-		                   <input type="file">
-
-		                    <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the location where shorcut will be created</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter Destination Shortcut Path </b></label>
-
-		                   <input type="file">
-
-
-		                    <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label > <b>Make Instance Invisible</b></label><br>
-		                </div>
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">Intermediate variable</span>
-		                          </i>
-		                  </div>
-		                  <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-		                  <input type="text" name="psw">
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label > <b>This Action is Enable</b></label><br>
-
-		                  <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  </div>
-
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-
-		    <div id="modalOne_move_folder" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-
-		           <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		            </div>
-
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will Move the Folder</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Move Folder</h2>
-
-
-
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the current location of Folder</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter Current Folder Path</b></label>
-
-		                   <input type="file">
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the new location of Folder</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter New Folder Path </b></label>
-		                  <input type="file">
-
-		                    <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label > <b>Make Instance Invisible</b></label><br>
-		                </div>
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">Intermediate variable</span>
-		                          </i>
-		                  </div>
-		                  <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-		                  <input type="text" name="psw">
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label > <b>This Action is Enable</b></label><br>
-
-		                  <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  </div>
-
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-
-		    <div id="modalOne_rename_folder" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-
-		          <div class="tab">
-		            <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		            <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		          </div>
-
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will Rename the Folder</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Rename Folder</h2>
-
-
-
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the current location of Folder</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter Current Folder Path</b></label>
-		                   <input type="file">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the current name of Folder</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter Current Folder Name </b></label>
-		                   <input type="text">
-
-
-		                    <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the new name of folder</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter New Folder Name </b></label>
-		                   <input type="text">
-
-
-		                    <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label > <b>Make Instance Invisible</b></label><br>
-		                </div>
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">Intermediate variable</span>
-		                          </i>
-		                  </div>
-		                  <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-		                  <input type="text" name="psw">
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label > <b>This Action is Enable</b></label><br>
-
-		                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  </div>
-
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-		    <!-- FOLDER POP-UPS ENDS HERE -->
-
-		    <!-- PDF POP-UPS STARTS HERE -->
-		    <div id="modalOne_create_pdf" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		            </div>     
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will create PDF file.</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Create PDF</h2>
-
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the location where PDF will be created.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter PDF Path</b></label>
-		                  <input type="file" list="browsers" name="browser" id="pop_create_pdf_path" multiple>
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the name of PDF.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter PDF Name</b></label>
-		                  <input type="file" list="browsers" name="browser" id="pop_create_pdf_name" multiple>
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the text for pdf file.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter Text</b></label>
-		                  <input type="file" list="browsers" name="browser" id="pop_create_pdf_text" multiple>
-
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">It will Open the File</span>
-		                          </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-		                  <input type="text" name="psw">
-
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label><b>This Action is Enable</b></label><br>
-
-		                  <button type="button" class="btn" id="btn_pop_create_pdf_ok" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-		                  <input type="text">
-
-		                </div>
-		                  
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-		    
-
-			    <!-- SPLIT PDF POP-UPS STARTS HERE -->
-		    <div id="modalOne_split_pdf" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		            </div>     
-		          <form class="split_pdf_form_popup" action="/">
-		            <div class="tooltip">
-		            </div>
-		            <h2 style="margin: -30px 0 10px;margin-left: 240px;">Extract Image From Pdf</h2>
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <!-- <h1>Action Input</h1> -->
-		                  <div class="tooltip">
-		                  </div>
-		                  <label style="position: relative;left: 0%;"><b>Select PDF</b></label>
-			                <input type="file" list="browsers" name="browser" id="pop_split_pdf_select_pdf" multiple>
-											<label style="position: relative;left: 0%;"><b>Select Destination</b></label>
-			                <input type="text" webkitdirectory directory multiple list="browsers" name="browser" id="pop_split_pdf_select_destination">
-			                <button type="button" class="btn" id="btn_split_pdf_ok" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-
-
-
-
-			    <div id="modalOne" class="modal">
+		<!-- Move folder starts here -->
+		<div id="modalOne_move_folder" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Move Folder</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter Current Folder Path</b></label>
+								<input type="file" id="pop_move_folder_current_path">
+							</div>
+
+							<div>
+								<label><b>Enter New Folder Path</b></label>
+								<input type="file" id="pop_move_folder_new_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_move_folder_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- Move folder ends here -->
+
+		<!-- Rename folder starts here -->
+		<div id="modalOne_rename_folder" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Rename Folder</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter Current Folder Path</b></label>
+								<input type="file" id="pop_rename_folder_current_path">
+							</div>
+
+							<div>
+								<label><b>Enter Current Folder Name </b></label>
+								<input type="text" id="pop_rename_folder_current_name">
+							</div>
+
+							<div>
+								<label><b>Enter New Folder Name</b></label>
+								<input type="text" id="pop_rename_folder_new_name">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_rename_folder_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+		  	</div>
+		</div>
+		<!-- Rename folder ends here -->
+
+		<!-- Create shortcut starts here -->
+		<div id="modalOne_create_shortcut" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Create Folder Shortcut</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter Folder Path</b></label>
+								<input type="file" id="pop_create_shortcut_path">
+							</div>
+
+							<div>
+								<label><b>Enter Destination Shortcut Path</b></label>
+								<input type="file" id="pop_create_shortcut_destination_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id="btn_pop_create_shortcut_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- Create shortcut ends here -->
+
+<!--------------- FOLDER POP-UPS ENDS HERE ------------------>
+
+
+<!--------------- OCR POP-UPS STARTS HERE ------------------>
+
+		<!-- Extract Image POP-UPS STARTS HERE -->
+		<div id="modalOne_extract_image" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="extract_image_form_popup" action="/">
+
+						<h2>Extract Image</h2>
+
+						<div>
+
+							<div>
+								<label><b>Send To</b></label>
+								<input type="text" list="browsers" name="browser" placeholder="Insert image URL.." id="pop_extract_image_url" id="pop_extract_image_send_to">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="pop_btn_extract_image_ok">EXTRACT</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- Extract Image POP-UPS ENDS HERE -->
+
+		<!-- Extract Image Response POP-UPS STARTS HERE -->
+		<div id="modalOne_extract_image_response" class="modal">
+		  <div class="modal-content">
+			<div class="contact-form">
+			  <a class="close">&times;</a>
+
+			  <form class="extract_image_response_form_popup" action="/">
+
+				<h2>Extracted Data</h2>
+				<div>
+				  <div class="1 tabcontent">
+					<div>
+
+					  <div id="extract_image_response_text">
+					  <p> Extracting... </p>
+					  </div>
+					  </div>
+					  </div>
+					  <button type="button" class="btn" id="btn_extract_image_response_save">SAVE</button>
+					  <button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+					</div>
+				  </div>
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+		<!-- Extract Image Response POP-UPS ENDS HERE -->
+
+<!--------------- OCR POP-UPS ENDS HERE ------------------>
+
+
+<!--------------- PDF POP-UPS STARTS HERE ------------------>
+
+		<!-- Create PDF starts here -->
+		<div id="modalOne_create_pdf" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="form_popup" action="/">
+
+						<h2>Create PDF</h2>
+
+						<div>
+
+							<div>
+								<label><b>Enter PDF Path</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_create_pdf_path" multiple>
+							</div>
+
+							<div>
+								<label><b>Enter PDF Name</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_create_pdf_name" multiple>
+							</div>
+
+							<div>
+								<label><b>Enter Text</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_create_pdf_text" multiple>
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_create_pdf_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- Create PDF ends here -->
+
+		<!-- Split PDF starts here -->
+		<div id="modalOne_split_pdf" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
+
+					<a class="close">&times;</a>
+
+					<form class="split_pdf_form_popup" action="/">
+
+						<h2>Extract Image From Pdf</h2>
+
+						<div>
+
+							<div>
+								<label><b>Select PDF</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_split_pdf_select_pdf" multiple>
+							</div>
+
+							<div>
+								<label><b>Select Destination</b></label>
+								<input type="text" webkitdirectory directory multiple list="browsers" name="browser" id="pop_split_pdf_select_destination">
+							</div>
+
+							<div>
+								<button type="button" class="btn" id="btn_split_pdf_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- Split PDF ends here -->
+
+		<div id="modalOne" class="modal">
 			      <div class="modal-content">
 			        <div class="contact-form">
 			          <a class="close">&times;</a>
@@ -5263,199 +5042,97 @@ Extension <input id='extension' type='text' name='extension'> -->
 			        </div>
 			      </div>
 			    </div>
-			    <div id="modalOne_concatenate_pdf" class="modal">
-			      <div class="modal-content">
-			        <div class="contact-form">
-			          <a class="close">&times;</a>
-			            <div class="tab">
-			              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-			              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-			            </div>     
-			          <form class="form_popup" action="/">
-			            <div class="tooltip">
-			            <i class="fa fa-info-circle">
-			              <span class="tooltiptext">It will concatenate multiple PDF files.</span>
-			            </i>
-			            </div>
-			            <h2 style="margin: -30px 0 10px;">Concatenate PDF</h2>
 
-			            <div>
-			              <div class="1 tabcontent">
-			                <div>
-			                  <h1>Action Input</h1>
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Select first pdf file which is to be merged.</span>
-			                    </i>
-			                  </div>
+		<!-- Concatenate PDF starts here -->
+		<div id="modalOne_concatenate_pdf" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
 
-			                  <label style="position: relative;left: 0%;"><b>Select First PDF</b></label>
-			                  <input type="file" list="browsers" name="browser" multiple>
+					<a class="close">&times;</a>
 
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Select second pdf file which is to be merged.</span>
-			                    </i>
-			                  </div>
+					<form class="form_popup" action="/">
 
-			                  <label style="position: relative;left: 0%;"><b>Select Second PDF</b></label>
-			                  <input type="file" list="browsers" name="browser" multiple>
+						<h2>Concatenate PDF</h2>
 
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Select the location of output file.</span>
-			                    </i>
-			                  </div>
+						<div>
 
-			                  <label style="position: relative;left: 0%;"><b>Select Destination PDF Path</b></label>
-			                  <input type="file" list="browsers" name="browser" multiple>
+							<div>
+								<label><b>Select First PDF</b></label>
+								<input type="file" list="browsers" name="browser" multiple id="pop_concatenate_pdf_select_first">
+							</div>
 
-			                <div>
-			                  <h1>Action Output</h1>
-			                  <div class="tooltip">
-			                          <i class="fa fa-info-circle">
-			                            <span class="tooltiptext">It will concatenate PDF Files</span>
-			                          </i>
-			                  </div>
+							<div>
+								<label><b>Select Second PDF</b></label>
+								<input type="file" list="browsers" name="browser" multiple id="pop_concatenate_pdf_select_second">
+							</div>
 
-			                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-			                  <input type="text" name="psw">
+							<div>
+								<label><b>Select Destination PDF Path</b></label>
+								<input type="file" list="browsers" name="browser" multiple id="pop_concatenate_pdf_destination_path">
+							</div>
 
-			                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-			                  <label><b>This Action is Enable</b></label><br>
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_concatenate_pdf_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
 
-			                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
+						</div>
 
-			            <div>
-			              <div class="2 tabcontent">
-			                <div>
-			                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-			                  <input type="text">
+					</form>
 
-			                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-			                  <input type="text">
+				</div>
+			</div>
+		</div>
+		<!-- Concatenate PDF ends here -->
 
-			                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-			                  <input type="text">
+		<!-- insert new page starts here -->
+		<div id="modalOne_insert_newpage_pdf" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
 
-			                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-			                  <input type="text">
+					<a class="close">&times;</a>
 
-			                </div>
-			                  
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-			        </div>
-			      </div>
-			    </div>
-			    <div id="modalOne_insert_newpage_pdf" class="modal">
-			      <div class="modal-content">
-			        <div class="contact-form">
-			          <a class="close">&times;</a>
-			            <div class="tab">
-			              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-			              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-			            </div>     
-			          <form class="form_popup" action="/">
-			            <div class="tooltip">
-			            <i class="fa fa-info-circle">
-			              <span class="tooltiptext">It will add a new page in existing pdf file.</span>
-			            </i>
-			            </div>
-			            <h2 style="margin: -30px 0 10px;">Insert New Page in PDF</h2>
+					<form class="form_popup" action="/">
 
-			            <div>
-			              <div class="1 tabcontent">
-			                <div>
-			                  <h1>Action Input</h1>
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter the input path of file</span>
-			                    </i>
-			                  </div>
+						<h2>Insert New Page in PDF</h2>
 
-			                  <label style="position: relative;left: 0%;"><b>Enter Source PDF Path</b></label>
-			                  <input type="file" list="browsers" name="browser" multiple>
+						<div>
 
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter index of page to be added</span>
-			                    </i>
-			                  </div>
+							<div>
+								<label><b>Enter Source PDF Path</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_insert_newpage_pdf_source_path">
+							</div>
 
-			                  <label style="position: relative;left: 0%;"><b>Enter Page Index</b></label>
-			                  <input type="number">
+							<div>
+								<label><b>Enter Page Index</b></label>
+								<input type="number" id="pop_insert_newpage_pdf_page_index">
+							</div>
 
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Enter text to add in pdf.</span>
-			                    </i>
-			                  </div>
+							<div>
+								<label><b>Enter Text (optional)</b></label>
+								<input type="text" list="browsers" name="browser" multiple id="pop_insert_newpage_pdf_text">
+							</div>
 
-			                  <label style="position: relative;left: 0%;"><b>Enter Text (optional)</b></label>
-			                  <input type="text" list="browsers" name="browser" multiple>
+							<div>
+								<label><b>Enter Destination PDF Path</b></label>
+								<input type="file" list="browsers" name="browser" multiple id="pop_insert_newpage_pdf_destination_path">
+							</div>
 
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Select the location of output file.</span>
-			                    </i>
-			                  </div>
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_insert_newpage_pdf_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
 
-			                  <label style="position: relative;left: 0%;"><b>Enter Destination PDF Path</b></label>
-			                  <input type="file" list="browsers" name="browser" multiple>
+						</div>
 
-			                <div>
-			                  <h1>Action Output</h1>
-			                  <div class="tooltip">
-			                          <i class="fa fa-info-circle">
-			                            <span class="tooltiptext">It will insert new page</span>
-			                          </i>
-			                  </div>
+					</form>
 
-			                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-			                  <input type="text" name="psw">
+				</div>
+			</div>
+		</div>
+		<!-- insert new page ends here -->
 
-			                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-			                  <label><b>This Action is Enable</b></label><br>
 
-			                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-
-			            <div>
-			              <div class="2 tabcontent">
-			                <div>
-			                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-			                  <input type="text">
-
-			                </div>
-			                  
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-			        </div>
-			      </div>
-			    </div>
 			    <div id="modalOne_insert_existingpage_pdf" class="modal">
 			      <div class="modal-content">
 			        <div class="contact-form">
@@ -6800,75 +6477,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 
 
-		    <!-- OCR POP-UPS STARTS HERE -->
-		    <!-- Extract Image POP-UPS STARTS HERE -->
-		    <div id="modalOne_extract_image" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		            </div>     
-		          <form class="extract_image_form_popup" action="/">
-		            <div class="tooltip">
-		            </div>
-		            <h2 style="margin: -30px 40px 10px 20px; margin-left: 130px;">Extract Image</h2>
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <!-- <h1>Action Input</h1> -->
-		                  <div class="tooltip">
-		                  </div>
-		                  <label style="position: relative;left: 0%;"><b>Send To</b></label>
-		                  <input type="text" list="browsers" name="browser" placeholder="Insert image URL.." id="pop_extract_image_url">
-		                  <div class="tooltip">
-		                  </div>
-		                  </div>
-		                  <button type="button" class="btn" id="btn_extract_image_ok" style=" position: relative; left: 70%;">EXTRACT</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-		    <!-- Extract Image POP-UPS ENDS HERE -->
 
-		    <!-- Extract Image Response POP-UPS STARTS HERE -->
-		    <div id="modalOne_extract_image_response" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		            </div>     
-		          <form class="extract_image_response_form_popup" action="/">
-		            <div class="tooltip">
-		            </div>
-		            <h2 style="margin: -30px 40px 10px 20px; margin-left: 130px;">Extracted Data</h2>
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <!-- <h1>Action Input</h1> -->
-		                  <div class="tooltip">
-		                  </div>
-		                  <div id="extract_image_response_text">
-		                  <p> Extracting... </p>
-		                  </div>
-		                  </div>
-		                  </div>
-		                  <button type="button" class="btn" id="btn_extract_image_response_save" style=" position: relative; left: 70%;">SAVE</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-		    <!-- Extract Image Response POP-UPS ENDS HERE -->
-		    <!-- OCR POP-UPS ENDS HERE -->
 
 	</div>
 

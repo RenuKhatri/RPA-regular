@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5ea84e8-3ee4-4e4b-99bd-128d463de740" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Democratized-RPA-staging_files/Democratized-RPA-staging_files/static/js/node_connector_main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Democratized-RPA-staging_files/Democratized-RPA-staging_files/static/js/node_connector_main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Democratized-RPA-staging_files/Democratized-RPA-staging_files/templates/nodes_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Democratized-RPA-staging_files/Democratized-RPA-staging_files/templates/nodes_page.html" afterDir="false" />
     </list>

@@ -608,6 +608,16 @@ window.addEventListener("load", () => {
 	const pop_copy_folder_destination_path = document.querySelector("#pop_copy_folder_destination_path");
     const btn_pop_copy_folder_ok = document.querySelector("#btn_pop_copy_folder_ok");
 
+    // Move folder
+	const pop_move_folder_current_path = document.querySelector("#pop_move_folder_current_path");
+	const pop_move_folder_new_path = document.querySelector("#pop_move_folder_new_path");
+    const btn_pop_move_folder_ok = document.querySelector("#btn_pop_move_folder_ok");
+
+    // Create shortcut
+	const pop_create_shortcut_path = document.querySelector("#pop_create_shortcut_path");
+	const pop_create_shortcut_destination_path = document.querySelector("#pop_create_shortcut_destination_path");
+    const btn_pop_create_shortcut_ok = document.querySelector("#btn_pop_create_shortcut_ok");
+
 
 	// Extract Image
 	const pop_extract_image_url = document.querySelector("#pop_extract_image_url");
@@ -630,8 +640,6 @@ window.addEventListener("load", () => {
 	const pop_split_pdf_select_pdf = document.querySelector("#pop_split_pdf_select_pdf");
 	const pop_split_pdf_select_destination = document.querySelector("#pop_split_pdf_select_destination");
 	const btn_split_pdf_ok = document.querySelector("#btn_split_pdf_ok");
-
-
 
 
 	// Create_PDF
@@ -3230,6 +3238,20 @@ window.addEventListener("load", () => {
 		modal.style.display = "none";
 	}
 
+	function moveFolderPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_move_folder_current_path.value, pop_move_folder_new_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_move_folder_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function createShortcutPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname ,[pop_create_shortcut_path.value, pop_create_shortcut_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_create_shortcut_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
 
 
 	function extractImagePopup(){
@@ -3249,6 +3271,28 @@ window.addEventListener("load", () => {
 		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [extract_image_response_text.textContent]));
 		console.log('2432432',extract_image_response_text.textContent);
 		var modal = btn_extract_image_response_save.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function createPdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId,popupname, [pop_create_pdf_path.value, pop_create_pdf_name.value, pop_create_pdf_text.value]));
+		console.log(popupArray);
+		var modal = btn_pop_create_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function splitPdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_split_pdf_select_pdf.value, pop_split_pdf_select_destination.value]));
+		console.log(popupArray);
+		var modal = btn_split_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function concatenatePdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_concatenate_pdf_select_first.value, pop_concatenate_pdf_select_second.value,
+		pop_concatenate_pdf_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_concatenate_pdf_ok.closest('.modal');
 		modal.style.display = "none";
 	}
 
@@ -3276,22 +3320,15 @@ window.addEventListener("load", () => {
 		var modal = btn_curebay_webautomation_ok.closest('.modal');
 		modal.style.display = "none";
 	}
-	function splitPdfPopup(){
-		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_split_pdf_select_pdf.value, pop_split_pdf_select_destination.value]));
-		console.log(popupArray);
-		var modal = btn_split_pdf_ok.closest('.modal');
-		modal.style.display = "none";
-	}
 
 
 
 
-	function createPdfPopup(){
-		popupArray.push(new Popup(popupInputId, popupOutputId,popupname, [pop_create_pdf_path.value, pop_create_pdf_name.value, pop_create_pdf_text.value]));
-		console.log(popupArray);
-		var modal = btn_pop_create_pdf_ok.closest('.modal');
-		modal.style.display = "none";
-	}
+
+
+
+
+
 
 	// function sortArray(){
 	// 	for (var i = 0; i < connectorArray.length; i++) {
@@ -3642,6 +3679,11 @@ window.addEventListener("load", () => {
     // Copy folder
     btn_pop_copy_folder_ok.addEventListener("click", copyFolderPopup, false);
 
+    // Move folder
+    btn_pop_move_folder_ok.addEventListener("click", moveFolderPopup, false);
+
+    // Create shortcut
+    btn_pop_create_shortcut_ok.addEventListener("click", createShortcutPopup, false);
 
 	// Extract Image
 	btn_extract_image_ok.addEventListener("click", extractImagePopup, false);
@@ -3653,9 +3695,14 @@ window.addEventListener("load", () => {
 	btn_record_web_record.addEventListener("click", recordWebRecordPopup, false);
 	btn_record_web_stop.addEventListener("click", recordWebStopPopup, false);
 
+    // Create_PDF
+	btn_pop_create_pdf_ok.addEventListener("click", createPdfPopup, false);
+
 	// Split PDF
 	btn_split_pdf_ok.addEventListener("click", splitPdfPopup, false);
 
+    // Concatenate PDF
+	btn_pop_concatenate_pdf_ok.addEventListener("click", concatenatePdfPopup, false);
 
 
 	// CureBay Web Automation
@@ -3667,8 +3714,7 @@ window.addEventListener("load", () => {
 
 
 
-	// Create_PDF
-	btn_pop_create_pdf_ok.addEventListener("click", createPdfPopup, false);
+
 
 
 
