@@ -618,7 +618,6 @@ window.addEventListener("load", () => {
 	const pop_create_shortcut_destination_path = document.querySelector("#pop_create_shortcut_destination_path");
     const btn_pop_create_shortcut_ok = document.querySelector("#btn_pop_create_shortcut_ok");
 
-
 	// Extract Image
 	const pop_extract_image_url = document.querySelector("#pop_extract_image_url");
 	const btn_extract_image_ok = document.querySelector("#btn_extract_image_ok");
@@ -637,10 +636,9 @@ window.addEventListener("load", () => {
 	const btn_curebay_webautomation_ok = document.querySelector("#btn_curebay_webautomation_ok");
 
 	// PDF Menu
-	const pop_split_pdf_select_pdf = document.querySelector("#pop_split_pdf_select_pdf");
-	const pop_split_pdf_select_destination = document.querySelector("#pop_split_pdf_select_destination");
-	const btn_split_pdf_ok = document.querySelector("#btn_split_pdf_ok");
-
+	//const pop_split_pdf_select_pdf = document.querySelector("#pop_split_pdf_select_pdf");
+	//const pop_split_pdf_select_destination = document.querySelector("#pop_split_pdf_select_destination");
+	//const btn_split_pdf_ok = document.querySelector("#btn_split_pdf_ok");
 
 	// Create_PDF
 	const pop_create_pdf_path = document.querySelector("#pop_create_pdf_path");
@@ -648,7 +646,91 @@ window.addEventListener("load", () => {
 	const pop_create_pdf_text = document.querySelector("#pop_create_pdf_text");
 	const btn_pop_create_pdf_ok = document.querySelector("#btn_pop_create_pdf_ok");
 	
+    // Split_PDF
+	const pop_split_pdf_select_pdf = document.querySelector("#pop_split_pdf_select_pdf");
+	const pop_split_pdf_select_destination = document.querySelector("#pop_split_pdf_select_destination");
+	const btn_split_pdf_ok = document.querySelector("#btn_split_pdf_ok");
 
+	// Concatenate_PDF
+	const pop_concatenate_pdf_select_first = document.querySelector("#pop_concatenate_pdf_select_first");
+	const pop_concatenate_pdf_select_second = document.querySelector("#pop_concatenate_pdf_select_second");
+	const pop_concatenate_pdf_destination_path = document.querySelector("#pop_concatenate_pdf_destination_path");
+	const btn_pop_concatenate_pdf_ok = document.querySelector("#btn_pop_concatenate_pdf_ok");
+
+	// Insert_new_page
+	const pop_insert_newpage_pdf_source_path = document.querySelector("#pop_insert_newpage_pdf_source_path");
+	const pop_insert_newpage_pdf_page_index = document.querySelector("#pop_insert_newpage_pdf_page_index");
+	const pop_insert_newpage_pdf_text = document.querySelector("#pop_insert_newpage_pdf_text");
+	const pop_insert_newpage_pdf_destination_path = document.querySelector("#pop_insert_newpage_pdf_destination_path");
+	const btn_pop_insert_newpage_pdf_ok = document.querySelector("#btn_pop_insert_newpage_pdf_ok");
+
+	// Insert_existing_page
+	const pop_insert_existingpage_pdf_source_path = document.querySelector("#pop_insert_existingpage_pdf_source_path");
+	const pop_insert_existingpage_pdf_existing_page = document.querySelector("#pop_insert_existingpage_pdf_existing_page");
+	const pop_insert_existingpage_pdf_destination_path = document.querySelector("#pop_insert_existingpage_pdf_destination_path");
+	const btn_pop_insert_existingpage_pdf_ok = document.querySelector("#btn_pop_insert_existingpage_pdf_ok");
+
+	// Encrypt_PDF
+	const pop_encrypt_pdf_source_path = document.querySelector("#pop_encrypt_pdf_source_path");
+	const pop_encrypt_pdf_destination_path = document.querySelector("#pop_encrypt_pdf_destination_path");
+	const pop_encrypt_pdf_password = document.querySelector("#pop_encrypt_pdf_password");
+	const pop_encrypt_pdf_ok = document.querySelector("#pop_encrypt_pdf_ok");
+
+	// Decrypt_PDF
+	const pop_decrypt_pdf_source_path = document.querySelector("#pop_decrypt_pdf_source_path");
+	const pop_decrypt_pdf_destination_path = document.querySelector("#pop_decrypt_pdf_destination_path");
+	const pop_decrypt_pdf_password = document.querySelector("#pop_decrypt_pdf_password");
+	const btn_pop_decrypt_pdf_ok = document.querySelector("#btn_pop_decrypt_pdf_ok");
+
+	// Extract_image_from_PDF
+	const pop_extract_image_pdf_source_path = document.querySelector("#pop_extract_image_pdf_source_path");
+	const pop_extract_image_pdf_image_path = document.querySelector("#pop_extract_image_pdf_image_path");
+	const btn_pop_extract_image_pdf_ok = document.querySelector("#btn_pop_extract_image_pdf_ok");
+
+	// Extract_text_from_PDF
+	const pop_extract_text_pdf_source_path = document.querySelector("#pop_extract_text_pdf_source_path");
+	const pop_extract_text_pdf_file_path = document.querySelector("#pop_extract_text_pdf_file_path");
+	const btn_pop_extract_text_pdf_ok = document.querySelector("#btn_pop_extract_text_pdf_ok");
+
+	// Extract_text_from_PDF_using_OCR
+	const pop_extract_text_ocr_pdf_source_path = document.querySelector("#pop_extract_text_ocr_pdf_source_path");
+	const pop_extract_text_ocr_pdf_file_path = document.querySelector("#pop_extract_text_ocr_pdf_file_path");
+	const btn_pop_extract_text_ocr_pdf_ok = document.querySelector("#btn_pop_extract_text_ocr_pdf_ok");
+
+	// Extract_page_from_PDF
+	const pop_extract_page_pdf_start_page = document.querySelector("#pop_extract_page_pdf_start_page");
+	const pop_extract_page_pdf_end_page = document.querySelector("#pop_extract_page_pdf_end_page");
+	const btn_pop_extract_page_pdf_ok = document.querySelector("#btn_pop_extract_page_pdf_ok");
+
+	// Convert_any_file_to_PDF
+	const pop_any_to_pdf_file_path = document.querySelector("#pop_any_to_pdf_file_path");
+	const pop_any_to_pdf_pdf_path = document.querySelector("#pop_any_to_pdf_pdf_path");
+	const btn_pop_any_to_pdf_ok = document.querySelector("#btn_pop_any_to_pdf_ok");
+
+	// Convert_word_file_to_PDF
+	const pop_word_to_pdf_source_path = document.querySelector("#pop_word_to_pdf_source_path");
+	const pop_word_to_pdf_destination_path = document.querySelector("#pop_word_to_pdf_destination_path");
+	const btn_pop_word_to_pdf_ok = document.querySelector("#btn_pop_word_to_pdf_ok");
+
+	// Convert_excel_file_to_PDF
+	const pop_excel_to_pdf_source_path = document.querySelector("#pop_excel_to_pdf_source_path");
+	const pop_excel_to_pdf_destination_path = document.querySelector("#pop_excel_to_pdf_destination_path");
+	const btn_pop_excel_to_pdf_ok = document.querySelector("#btn_pop_excel_to_pdf_ok");
+
+	// Convert_GIF_file_to_PDF
+	const pop_gif_to_pdf_source_path = document.querySelector("#pop_gif_to_pdf_source_path");
+	const pop_gif_to_pdf_destination_path = document.querySelector("#pop_gif_to_pdf_destination_path");
+	const btn_pop_gif_to_pdf_ok = document.querySelector("#btn_pop_gif_to_pdf_ok");
+
+	// Convert_PDF_file_to_word
+	const pop_pdf_to_word_source_path = document.querySelector("#pop_pdf_to_word_source_path");
+	const pop_pdf_to_word_destination_path = document.querySelector("#pop_pdf_to_word_destination_path");
+	const btn_pop_pdf_to_word_ok = document.querySelector("#btn_pop_pdf_to_word_ok");
+
+	// Convert_PDF_file_to_excel
+	const pop_pdf_to_excel_source_path = document.querySelector("#pop_pdf_to_excel_source_path");
+	const pop_pdf_to_excel_destination_path = document.querySelector("#pop_pdf_to_excel_destination_path");
+	const btn_pop_pdf_to_excel_ok = document.querySelector("#btn_pop_pdf_to_excel_ok");
 
 
 	const HANDLE_RADIUS = 7;
@@ -3252,8 +3334,6 @@ window.addEventListener("load", () => {
 		modal.style.display = "none";
 	}
 
-
-
 	function extractImagePopup(){
 		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_extract_image_url.value]));
 		console.log(pop_extract_image_url.value);
@@ -3289,10 +3369,122 @@ window.addEventListener("load", () => {
 	}
 
 	function concatenatePdfPopup(){
-		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_concatenate_pdf_select_first.value, pop_concatenate_pdf_select_second.value,
-		pop_concatenate_pdf_destination_path.value]));
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_concatenate_pdf_select_first.value,
+		pop_concatenate_pdf_select_second.value, pop_concatenate_pdf_destination_path.value]));
 		console.log(popupArray);
 		var modal = btn_pop_concatenate_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function insertNewPagePdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_insert_newpage_pdf_source_path.value,
+		pop_insert_newpage_pdf_page_index.value, pop_insert_newpage_pdf_text.value, pop_insert_newpage_pdf_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_insert_newpage_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function insertExistingPagePdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_insert_existingpage_pdf_source_path.value,
+		pop_insert_existingpage_pdf_existing_page.value, pop_insert_existingpage_pdf_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_insert_existingpage_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function encryptPdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_encrypt_pdf_source_path.value,
+		pop_encrypt_pdf_destination_path.value, pop_encrypt_pdf_password.value]));
+		console.log(popupArray);
+		var modal = pop_encrypt_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function decryptPdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_decrypt_pdf_source_path.value,
+		pop_decrypt_pdf_destination_path.value, pop_decrypt_pdf_password.value]));
+		console.log(popupArray);
+		var modal = btn_pop_decrypt_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function extractImagePdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_extract_image_pdf_source_path.value,
+		pop_extract_image_pdf_image_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_extract_image_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function extractTextPdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_extract_image_pdf_source_path.value,
+		pop_extract_image_pdf_image_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_extract_image_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function extractTextPdfOCRPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_extract_text_ocr_pdf_source_path.value,
+		pop_extract_text_ocr_pdf_file_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_extract_text_ocr_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function extractPagePdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_extract_page_pdf_start_page.value,
+		pop_extract_page_pdf_end_page.value]));
+		console.log(popupArray);
+		var modal = btn_pop_extract_page_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function anyFileToPdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_any_to_pdf_file_path.value,
+		pop_any_to_pdf_pdf_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_any_to_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function wordToPdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_word_to_pdf_source_path.value,
+		pop_word_to_pdf_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_word_to_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function excelToPdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_excel_to_pdf_source_path.value,
+		pop_excel_to_pdf_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_excel_to_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function gifToPdfPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_gif_to_pdf_source_path.value,
+		pop_gif_to_pdf_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_gif_to_pdf_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function pdfToWordPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_pdf_to_word_source_path.value,
+		pop_pdf_to_word_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_pdf_to_word_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function pdfToExcelPopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_pdf_to_excel_source_path.value,
+		pop_pdf_to_excel_destination_path.value]));
+		console.log(popupArray);
+		var modal = btn_pop_pdf_to_excel_ok.closest('.modal');
 		modal.style.display = "none";
 	}
 
@@ -3703,6 +3895,48 @@ window.addEventListener("load", () => {
 
     // Concatenate PDF
 	btn_pop_concatenate_pdf_ok.addEventListener("click", concatenatePdfPopup, false);
+
+    // Insert new page
+	btn_pop_insert_newpage_pdf_ok.addEventListener("click", insertNewPagePdfPopup, false);
+
+	// Insert existing page
+	btn_pop_insert_existingpage_pdf_ok.addEventListener("click", insertExistingPagePdfPopup, false);
+
+	// Encrypt PDF
+	pop_encrypt_pdf_ok.addEventListener("click", encryptPdfPopup, false);
+
+	// Decrypt PDF
+	btn_pop_decrypt_pdf_ok.addEventListener("click", decryptPdfPopup, false);
+
+	// Extract image from PDF
+	btn_pop_extract_image_pdf_ok.addEventListener("click", extractImagePdfPopup, false);
+
+	// Extract text from PDF
+	btn_pop_extract_text_pdf_ok.addEventListener("click", extractTextPdfPopup, false);
+
+	// Extract text from PDF using OCR
+	btn_pop_extract_text_ocr_pdf_ok.addEventListener("click", extractTextPdfOCRPopup, false);
+
+	// Extract page from PDF
+	btn_pop_extract_page_pdf_ok.addEventListener("click", extractPagePdfPopup, false);
+
+    // Convert any file to PDF
+	btn_pop_any_to_pdf_ok.addEventListener("click", anyFileToPdfPopup, false);
+
+    // Convert word file to PDF
+	btn_pop_word_to_pdf_ok.addEventListener("click", wordToPdfPopup, false);
+
+	// Convert excel file to PDF
+	btn_pop_excel_to_pdf_ok.addEventListener("click", excelToPdfPopup, false);
+
+	// Convert GIF file to PDF
+	btn_pop_gif_to_pdf_ok.addEventListener("click", gifToPdfPopup, false);
+
+	// Convert PDF file to word
+	btn_pop_pdf_to_word_ok.addEventListener("click", pdfToWordPopup, false);
+
+	// Convert PDF file to excel
+	btn_pop_pdf_to_excel_ok.addEventListener("click", pdfToExcelPopup, false);
 
 
 	// CureBay Web Automation
