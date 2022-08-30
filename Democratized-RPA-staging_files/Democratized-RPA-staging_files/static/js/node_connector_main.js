@@ -1,3 +1,13 @@
+$( document ).ready(function() {
+    $('.sub-menu ul').hide();
+    $(".sub-menu a").click(function () {
+        $(this).parent(".sub-menu").children("ul").slideToggle("100");
+        $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+    });
+    $('.sub-menu').has('ul').find('a').not('ul ul a').addClass('caret');
+});
+
+
 window.addEventListener("load", () => {
 	const canvas = document.querySelector("#canvas");
 	const ctx = canvas.getContext("2d");
@@ -731,6 +741,16 @@ window.addEventListener("load", () => {
 	const pop_pdf_to_excel_source_path = document.querySelector("#pop_pdf_to_excel_source_path");
 	const pop_pdf_to_excel_destination_path = document.querySelector("#pop_pdf_to_excel_destination_path");
 	const btn_pop_pdf_to_excel_ok = document.querySelector("#btn_pop_pdf_to_excel_ok");
+
+	// Extract_data_from_webpage
+	const pop_extract_data_from_webpage_url = document.querySelector("#pop_extract_data_from_webpage_url");
+	const pop_extract_data_from_webpage_output_location = document.querySelector("#pop_extract_data_from_webpage_output_location");
+	const btn_pop_extract_data_from_webpage_ok = document.querySelector("#btn_pop_extract_data_from_webpage_ok");
+
+	// Take_screenshot_from_webpage
+	const pop_take_screenshot_of_webpage_url = document.querySelector("#pop_take_screenshot_of_webpage_url");
+	const pop_take_screenshot_of_webpage_output_location = document.querySelector("#pop_take_screenshot_of_webpage_output_location");
+	const btn_pop_take_screenshot_of_webpage_ok = document.querySelector("#btn_pop_take_screenshot_of_webpage_ok");
 
 
 	const HANDLE_RADIUS = 7;
@@ -3513,6 +3533,21 @@ window.addEventListener("load", () => {
 		modal.style.display = "none";
 	}
 
+    function extractDataWebpagePopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_extract_data_from_webpage_url.value,
+		pop_extract_data_from_webpage_output_location.value]));
+		console.log(popupArray);
+		var modal = btn_pop_extract_data_from_webpage_ok.closest('.modal');
+		modal.style.display = "none";
+	}
+
+	function takeScreenshotWebpagePopup(){
+		popupArray.push(new Popup(popupInputId, popupOutputId, popupname, [pop_take_screenshot_of_webpage_url.value,
+		pop_take_screenshot_of_webpage_output_location.value]));
+		console.log(popupArray);
+		var modal = btn_pop_take_screenshot_of_webpage_ok.closest('.modal');
+		modal.style.display = "none";
+	}
 
 
 
@@ -3938,18 +3973,14 @@ window.addEventListener("load", () => {
 	// Convert PDF file to excel
 	btn_pop_pdf_to_excel_ok.addEventListener("click", pdfToExcelPopup, false);
 
-
 	// CureBay Web Automation
 	btn_curebay_webautomation_ok.addEventListener("click", curebayWebautomationPopup, false);
 
+    // Extract data from webpage
+    btn_pop_extract_data_from_webpage_ok.addEventListener("click", extractDataWebpagePopup, false);
 
-
-
-
-
-
-
-
+    // Take screenshot of webpage
+    btn_pop_take_screenshot_of_webpage_ok.addEventListener("click", takeScreenshotWebpagePopup, false);
 
 
 

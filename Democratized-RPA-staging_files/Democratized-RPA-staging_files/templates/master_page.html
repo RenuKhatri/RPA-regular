@@ -12,6 +12,7 @@
 	<!-- <script src="JQuery/jquery.min.js"></script> -->
 
 	<!-- BOOTSTRAP CDN **REQUIRES INTERNET** -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{%static 'css/bootstrap_min.css' %}"><!-- Latest compiled and minified CSS -->
 	<script src="{%static 'js/jquery_min.js' %}"></script><!-- jQuery library -->
 	<script src="{%static 'js/popper_min.js' %}"></script><!-- Popper JS -->
@@ -38,22 +39,32 @@
 			<a href="logout" id="logout">Logout</a>
 		</div>
 	</nav>
-	<nav class="navbar container-fluid col-lg-3" id="left_panel">
-			<a href="home" id="column_links">Home</a>
-		    <a href="project_page.html" id="column_links">Project</a>
-		    <a href="user_profile.html" id="column_links">User Profile</a>
-		    <a href="login.html" id="column_links">Logs</a>
-		    <a href="nodes_page.html" id="column_links">Nodes</a>
-		    <a href="#" id="column_links">Knowledge Bank</a>
+	<nav class="navbar container-fluid col-lg-3 p-0" id="left_panel">
+		<ul>
+
+			<li class='sub-menu'><a href="home" id="column_links">Home</a></li>
+		    <li class='sub-menu'><a href="#" id="column_links">Project <i class='fa fa-caret-down right'></i></a>
+
+				<ul>
+					<li>
+						<div class="section">
+							<!--<h4 class="btn btn-primary" id="project_tasks_list">Project Task Lists</h4>-->
+							<div class="tasks">
+								{% for task in task_lists %}
+									<div class="click_task list-group-item border-0">{{task.product_name}}</div>
+								 {% endfor %}
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			</li>
+		    <li class='sub-menu'><a href="user_profile.html" id="column_links">User Profile</a></li>
+		    <li class='sub-menu'><a href="login.html" id="column_links">Logs</a></li>
+		    <li class='sub-menu'><a href="nodes_page.html" id="column_links">Nodes</a></li>
+		    <li class='sub-menu'><a href="#" id="column_links">Knowledge Bank</a></li>
 		    <!-- <a href="nodes_page" id="column_links">Task List's</a> -->
-		    <div class="section">
-			    <h4 class="btn btn-primary" id="project_tasks_list">Project Task Lists</h4>
-			   	<ul class="tasks">
-			  		{% for task in task_lists %}
-			            <li class="click_task list-group-item">{{task.product_name}}</li>
-			         {% endfor %}
-			    </ul>
-			</div>
+
 	</nav>
 
 <!-- <li class="click_task list-group-item" onclick="click_task_btn(this)"> -->

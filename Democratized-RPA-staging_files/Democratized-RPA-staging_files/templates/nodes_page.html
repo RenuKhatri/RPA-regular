@@ -345,6 +345,7 @@ function canvas_button(event) {
 			</div>
 		</div>
 	</div>
+
 	<div id="popup">
 
 <!--------------- PHONE POP-UPS STARTS HERE ------------------>
@@ -361,12 +362,12 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Send To</b></label>
 								<input type="number" list="browsers" name="browser" placeholder="Recipient" id="pop_sms_recipient">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Message</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Type message" id="pop_sms_message">
 							</div>
@@ -398,12 +399,12 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Call To</b></label>
 								<input type="number" list="browsers" name="browser" placeholder="Recipient" id="pop_call_recipient">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Voice Message</b></label>
 								<input type="number" list="browsers" name="browser" placeholder="Write voice msg here.." id="pop_call_message">
 							</div>
@@ -439,12 +440,12 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>User Name</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Recipient" id="pop_read_CSV_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Message</b></label>
 								<textarea id="pop_read_CSV_message"></textarea>
 							</div>
@@ -476,12 +477,12 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>User Name</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Recipient" id="pop_write_CSV_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Message</b></label>
 								<textarea id="pop_write_CSV_message"></textarea>
 							</div>
@@ -516,12 +517,12 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>User Name</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Recipient" id="pop_download_small_files_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Message</b></label>
 								<textarea id="pop_download_small_files_message"></textarea>
 							</div>
@@ -552,12 +553,12 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>User Name</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Recipient" id="pop_download_large_files_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Message</b></label>
 								<textarea id="pop_download_large_files_message"></textarea>
 							</div>
@@ -588,12 +589,12 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>User Name</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Recipient" id="pop_download_multiple_files_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Message</b></label>
 								<textarea id="pop_download_multiple_files_message"></textarea>
 							</div>
@@ -611,9 +612,12 @@ function canvas_button(event) {
 			</div>
 		</div>
 		<!-- download multiple files from web ends here -->
-		<!-- DIRECT WEB ACCESS POP-UPS ENDS HERE -->
 
-		<!-- EMAIL POP-UPS STARTS HERE -->
+<!--------------- DIRECT WEB ACCESS POP-UPS ENDS HERE ------------------>
+
+
+<!--------------- EMAIL POP-UPS STARTS HERE ------------------>
+
 		<!-- send email starts here -->
 		<div id="modalOne_send_email" class="modal">
 			<div class="modal-content">
@@ -626,17 +630,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_send_email_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_send_email_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_send_email_mail_body"></textarea>
 							</div>
@@ -667,17 +671,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_retrieve_email_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_retrieve_email_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_retrieve_email_mail_body"></textarea>
 							</div>
@@ -700,6 +704,7 @@ function canvas_button(event) {
 		<div id="modalOne_send_html_message" class="modal">
 			<div class="modal-content">
 				<div class="contact-form">
+
 					<a class="close">&times;</a>
 
 					<form class="form_popup" action="/">
@@ -708,17 +713,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_send_HTML_message_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_send_HTML_message_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_send_HTML_message_mail_body"></textarea>
 							</div>
@@ -749,17 +754,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_send_plaintext_message_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_send_plaintext_message_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_send_plaintext_message_mail_body"></textarea>
 							</div>
@@ -790,17 +795,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_attach_excel_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_attach_excel_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_attach_excel_mail_body"></textarea>
 							</div>
@@ -831,17 +836,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_attach_word_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_attach_word_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_attach_word_mail_body"></textarea>
 							</div>
@@ -871,17 +876,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_attach_ppt_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_attach_ppt_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_attach_ppt_mail_body"></textarea>
 							</div>
@@ -912,17 +917,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_attach_zip_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_attach_zip_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_attach_zip_mail_body"></textarea>
 							</div>
@@ -953,17 +958,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_attach_any_otherformat_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_attach_any_otherformat_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_attach_any_otherformat_mail_body"></textarea>
 							</div>
@@ -994,17 +999,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_save_attachment_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_save_attachment_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_save_attachment_mail_body"></textarea>
 							</div>
@@ -1035,17 +1040,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_del_all_messages_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_del_all_messages_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_del_all_messages_mail_body"></textarea>
 							</div>
@@ -1076,17 +1081,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_del_read_messages_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_del_read_messages_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_del_read_messages_mail_body"></textarea>
 							</div>
@@ -1118,17 +1123,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_del_unread_messages_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_del_unread_messages_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_del_unread_messages_mail_body"></textarea>
 							</div>
@@ -1163,17 +1168,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_begin_error_handling_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_begin_error_handling_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_begin_error_handling_mail_body"></textarea>
 							</div>
@@ -1204,17 +1209,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_end_error_handling_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_end_error_handling_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_end_error_handling_mail_body"></textarea>
 							</div>
@@ -1245,17 +1250,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_continue_error_handling_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_continue_error_handling_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_continue_error_handling_mail_body"></textarea>
 							</div>
@@ -1286,17 +1291,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_eh_send_email_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_eh_send_email_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_eh_send_email_mail_body"></textarea>
 							</div>
@@ -1328,17 +1333,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_take_snapshot_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_take_snapshot_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_take_snapshot_mail_body"></textarea>
 							</div>
@@ -1369,17 +1374,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_log_data_into_file_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_log_data_into_file_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_log_data_into_file_mail_body"></textarea>
 							</div>
@@ -1409,17 +1414,17 @@ function canvas_button(event) {
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Mail</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the sender e-mail address" id="pop_stop_task_sender_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Subject</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the subject" id="pop_stop_task_subject">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Mail Body</b></label>
 								<textarea type="text" list="browsers" name="browser" placeholder="Enter the content" id="pop_stop_task_mail_body"></textarea>
 							</div>
@@ -1443,179 +1448,80 @@ function canvas_button(event) {
 
 		<!-- create excel starts here -->
 		<div id="modalOne_create_excel" class="modal">
-		  <div class="modal-content">
-			<div class="contact-form">
-			  <a class="close">&times;</a>
+			<div class="modal-content">
+				<div class="contact-form">
 
-				<form class="form_popup" id = 'create_node' data-url="action_create_excel" method="POST">
-				{% csrf_token %}
-				{{form.as_p}}
+					<a class="close">&times;</a>
 
-				<h2>Create Excel</h2>
+					<form class="form_popup" id = 'create_node' data-url="action_create_excel" method="POST">
+					{% csrf_token %}
+					{{form.as_p}}
 
-				<div>
-				  <div class="1 tabcontent">
-					<div>
-					  <h1>Action Input</h1>
-					  <div class="tooltip">
-						<i class="fa fa-info-circle">
-						  <span class="tooltiptext">Enter the name of Excel</span>
-						</i>
-					  </div>
+						<h2>Create Excel</h2>
 
-					  <label style="position: relative;left: 0%;"><b>Enter Excel Name</b></label>
+						<div>
 
-					   <input type="text" name='excel_name' id="pop_create_excel_name">
+							<div class="form-space">
+								<label><b>Enter Excel Name</b></label>
+								<input type="text" name='excel_name' id="pop_create_excel_name">
+							</div>
 
-					  <div class="tooltip">
-						<i class="fa fa-info-circle">
-						  <span class="tooltiptext">Enter the location where excel file should be created </span>
-						</i>
-					  </div>
+							<div class="form-space">
+								<label><b>Enter Path</b></label>
+								<input type="file" id="pop_create_excel_path" name ='file_location' onchange="getfolder(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />
+								<input id='outputfile' type='hidden' name='outputfile' readonly>
+							</div>
 
-					  <label style="position: relative;left: 0%;"><b>Enter Path</b></label>
+							<div class="d-flex justify-content-end">
+								<button type="submit" id ='btn_pop_create_excel_ok' class="btn" value="Create_Excel">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
 
-					   <!-- <input type="file" name="file_location"> -->
-					   <input type="file" id="pop_create_excel_path" name ='file_location' onchange="getfolder(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />
-					   <input id='outputfile' type='hidden' name='outputfile' readonly>
-					   <!-- <input type="file" id="filepicker" name="file_location" webkitdirectory multiple /> -->
-						<!-- <input id="file_ptah" type="file"  name ='file_location' multiple> -->
-						<!-- <input id='inputfile' type='file' name='inputfile' onChange='getFileNameWithExt(event)'><br>
-Output Filename <input id='outputfile' type='text' name='outputfile'><br>
-Extension <input id='extension' type='text' name='extension'> -->
+						</div>
 
-						<input type="checkbox" name="vehicle1" style="width: 10%;">
-					  <label > <b>Make Instance Invisible</b></label><br>
-					</div>
-					<div>
-					  <h1>Action Output</h1>
-					  <div class="tooltip">
-							  <i class="fa fa-info-circle">
-								<span class="tooltiptext">Intermediate variable</span>
-							  </i>
-					  </div>
-					  <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					  <input type="text" name="srore_inst">
-					  <input type="checkbox" name="vehicle1" style="width: 10%;">
-					  <label > <b>This Action is Enable</b></label><br>
+					</form>
 
-					  <button type="submit" id ='btn_pop_create_excel_ok' class="btn" value="Create_Excel" style=" position: relative; left: 70%;">OK</button>
-					  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					</div>
-
-				  </div>
 				</div>
-
-				<div>
-				  <div class="2 tabcontent">
-					<div>
-					  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-					  <input type="text">
-
-					  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-					  <input type="text">
-
-					   <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-					  <input type="text">
-
-					  </div>
-
-					  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					</div>
-				  </div>
-				</div>
-			  </form>
 			</div>
-		  </div>
 		</div>
 		<!-- create excel ends here -->
 
 		<!-- open excel starts here -->
 		<div id="modalOne_open_excel" class="modal">
-		  <div class="modal-content">
-			<div class="contact-form">
-			  <a class="close">&times;</a>
+			<div class="modal-content">
+				<div class="contact-form">
 
-			  <div class="tab">
-				  <button class="tablinks" onclick="openCity(event, '1')">General</button>
-				  <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
+					<a class="close">&times;</a>
+
+					<form class="form_popup" id = 'open_node' data-url="action_open_excel" method="POST">
+					{% csrf_token %}
+					{{form.as_p}}
+
+						<h2>Open Excel</h2>
+
+						<div>
+
+							<div class="form-space">
+								<label><b>Enter Excel Name</b></label>
+								<input type="text" name='excel_name' id="pop_open_excel_name">
+							</div>
+
+							<div class="form-space">
+								<label><b>Enter Path</b></label>
+								<input type="text" name ="file_location" id="pop_open_excel_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="submit" class="btn" id ='btn_pop_open_excel_ok' value="Open_Excel">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
 				</div>
-
-			  <form class="form_popup" id = 'open_node' data-url="action_open_excel" method="POST">
-				{% csrf_token %}
-				{{form.as_p}}
-				<div class="tooltip">
-				<i class="fa fa-info-circle">
-				  <span class="tooltiptext">It will Open the Excel File</span>
-				</i>
-				</div>
-				<h2 style="margin: -30px 0 10px;">Open Excel</h2>
-				<div>
-				  <div class="1 tabcontent">
-					<div>
-					  <h1>Action Input</h1>
-					  <div class="tooltip">
-						<i class="fa fa-info-circle">
-						  <span class="tooltiptext">Enter the name of excel file</span>
-						</i>
-					  </div>
-
-					  <label style="position: relative;left: 0%;"><b>Enter Excel Name</b></label>
-
-					   <input type="text" name='excel_name' id="pop_open_excel_name">
-
-					  <div class="tooltip">
-						<i class="fa fa-info-circle">
-						  <span class="tooltiptext">Enter the location of excel file</span>
-						</i>
-					  </div>
-
-					  <label style="position: relative;left: 0%;"><b>Enter Path</b></label>
-
-					   <input type="text" name ="file_location" id="pop_open_excel_path">
-					   <!-- <input type="file" name="file_location"> -->
-					  <!--  <input type="file" id="flup" name ='file_location' onchange="getfolder(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />
-					   <input id='outputfile' type='hidden' name='outputfile' readonly> -->
-
-						<input type="checkbox" name="vehicle1" style="width: 10%;">
-					  <label > <b>Make Instance Invisible</b></label><br>
-					</div>
-					<div>
-					  <h1>Action Output</h1>
-					  <div class="tooltip">
-							  <i class="fa fa-info-circle">
-								<span class="tooltiptext">Intermediate variable</span>
-							  </i>
-					  </div>
-					  <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					  <input type="text" name="srore_inst">
-					  <input type="checkbox" name="vehicle1" style="width: 10%;">
-					  <label > <b>This Action is Enable</b></label><br>
-
-					  <button type="submit" class="btn" id ='btn_pop_open_excel_ok' value="Open_Excel" style=" position: relative; left: 70%;">OK</button>
-					  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					</div>
-				  </div>
-				</div>
-
-				<div>
-				  <div class="2 tabcontent">
-					<div>
-					  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-					  <input type="text">
-
-					  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-					  <input type="text">
-
-					  </div>
-
-					  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					</div>
-				  </div>
-				</div>
-			  </form>
 			</div>
-		  </div>
 		</div>
 		<!-- open excel ends here -->
 
@@ -1631,7 +1537,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Path</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Enter the Path" id="pop_delete_excel_path">
 							</div>
@@ -1662,17 +1568,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Current Excel Path</b></label>
 								<input type="file" id="pop_rename_excel_current_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter New Excel Path</b></label>
 								<input type="text" id="pop_rename_excel_new_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter New Excel Name </b></label>
 								<input type="text" id="pop_rename_excel_name">
 							</div>
@@ -1703,17 +1609,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Excel Path</b></label>
 								<input type="file" id="pop_copy_excel_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Excel Path</b></label>
 								<input type="file" id="pop_copy_excel_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Name</b></label>
 								<input type="text" id="pop_copy_excel_name">
 							</div>
@@ -1744,17 +1650,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Excel Path</b></label>
 								<input type="file" id="pop_move_excel_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Excel Path</b></label>
 								<input type="file" id="pop_move_excel_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Name</b></label>
 								<input type="text" id="pop_move_excel_name">
 							</div>
@@ -1786,17 +1692,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Excel Path</b></label>
 								<input type="file" id="pop_search_value_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Excel Path</b></label>
 								<input type="file" id="pop_search_value_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Name</b></label>
 								<input type="text" id="pop_search_value_name">
 							</div>
@@ -1828,17 +1734,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Excel Path</b></label>
 								<input type="file" id="pop_copy_data_excel_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Excel Path</b></label>
 								<input type="file" id="pop_copy_data_excel_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Name</b></label>
 								<input type="text" id="pop_copy_data_excel_name">
 							</div>
@@ -1869,17 +1775,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Excel Path</b></label>
 								<input type="file" id="pop_create_sheet_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Excel Path</b></label>
 								<input type="file" id="pop_create_sheet_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Name</b></label>
 								<input type="text" id="pop_create_sheet_name">
 							</div>
@@ -1910,17 +1816,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Excel Path</b></label>
 								<input type="file" id="pop_sel_sheet_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Excel Path</b></label>
 								<input type="file" id="pop_sel_sheet_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Name</b></label>
 								<input type="text" id="pop_sel_sheet_name">
 							</div>
@@ -1951,17 +1857,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Excel Path</b></label>
 								<input type="file" id="pop_rename_sheet_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Excel Path</b></label>
 								<input type="file" id="pop_rename_sheet_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Name</b></label>
 								<input type="text" id="pop_rename_sheet_name">
 							</div>
@@ -1993,17 +1899,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Excel Path</b></label>
 								<input type="file" id="pop_copy_data_sheet_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Excel Path</b></label>
 								<input type="file" id="pop_copy_data_sheet_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Name</b></label>
 								<input type="text" id="pop_copy_data_sheet_name">
 							</div>
@@ -2034,7 +1940,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Name</b></label>
 								<input type="text" id="pop_del_sheet_name">
 							</div>
@@ -2064,7 +1970,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Column Name</b></label>
 								<input type="text" id="pop_del_column_name">
 							</div>
@@ -2096,7 +2002,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Row Name</b></label>
 								<input type="text" id="pop_del_row_name">
 							</div>
@@ -2127,7 +2033,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Row and Column Name</b></label>
 								<input type="text" id="pop_del_row_column_name">
 							</div>
@@ -2159,17 +2065,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter value to searched</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_vlookup_same_searched_value">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter range to searched</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_vlookup_same_searched_range">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter value index</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_vlookup_same_index_value">
 							</div>
@@ -2200,17 +2106,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Cell Range</b></label>
 								<input type="text" id="pop_vlookup_two_cell_range">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter the Value</b></label>
 								<input type="text" id="pop_vlookup_two_value">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Index of Value</b></label>
 								<input type="text" id="pop_vlookup_two_index_value">
 							</div>
@@ -2241,12 +2147,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Formula</b></label>
 								<input type="text" id="pop_formula_enter_value">
 							</div>
 
-							<div>
+							<div class="form-space">
 							  <label><b>Enter Cell Range</b></label>
 							   <input type="text" id="pop_formula_cell_range">
 							</div>
@@ -2277,12 +2183,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter value to filter</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_filter_enter_value">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter the column number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_filter_column_number">
 							</div>
@@ -2314,7 +2220,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter column number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_remove_duplicates_column_number">
 							</div>
@@ -2345,7 +2251,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Sheet Name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_max_column_sheet_name">
 							</div>
@@ -2376,7 +2282,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Sheet Name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_max_row_sheet_name">
 							</div>
@@ -2408,12 +2314,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter column number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_roundoff_column_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter decimal place</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_roundoff_decimal_place">
 							</div>
@@ -2445,12 +2351,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter keyword for hashsing</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_password_enter_keyword">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_password_enter_password">
 							</div>
@@ -2482,17 +2388,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter position of start cell</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_sum_if_start_cell">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter position of end cell</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_sum_if_end_cell">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter position of output cell</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_sum_if_output_cell">
 							</div>
@@ -2523,12 +2429,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter value as column name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_pivot_table_column_value">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter index as column name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_pivot_table_column_index">
 							</div>
@@ -2559,7 +2465,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Sheet number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_paste_special_sheet_number">
 							</div>
@@ -2590,17 +2496,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Path</b></label>
 								<input type="file" id="pop_change_header_excel_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Old Header Name</b></label>
 								<input type="text" id="pop_change_header_old_name">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter New Header Name</b></label>
 								<input type="text" id="pop_change_header_new_name">
 							</div>
@@ -2632,12 +2538,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Column Name</b></label>
 								<input type="text" id="pop_col_datatype_column_name">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Data Type</b></label>
 								<input type="text" id="pop_col_datatype_data_type">
 							</div>
@@ -2668,17 +2574,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Excel Path</b></label>
 								<input type="text" id="pop_excel_to_csv_excel_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter CSV Path</b></label>
 								<input type="file" id="pop_excel_to_csv_CSV_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter CSV Name</b></label>
 								<input type="text" id="pop_excel_to_csv_CSV_name">
 							</div>
@@ -2710,7 +2616,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Cell Range</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_read_cell_data_range">
 							</div>
@@ -2746,22 +2652,22 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_change_folder_ftp_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_change_folder_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_change_folder_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Path</b></label>
 								<input type="text" id="pop_change_folder_ftp_folder_path">
 							</div>
@@ -2793,27 +2699,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_create_folder_ftp_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_create_folder_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_create_folder_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Path</b></label>
 								<input type="text" id="pop_create_folder_ftp_server_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Name</b></label>
 								<input type="text" id="pop_create_folder_ftp_name">
 							</div>
@@ -2844,7 +2750,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Path</b></label>
 								<input type="file" id="pop_del_folder_enter_path">
 							</div>
@@ -2876,27 +2782,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_file_delete_ftp_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_file_delete_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_file_delete_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Input File Path</b></label>
 								<input type="text" id="pop_file_delete_ftp_file_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter File Name</b></label>
 								<input type="text" id="pop_file_delete_ftp_file_name">
 							</div>
@@ -2928,27 +2834,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_file_download_ftp_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_file_download_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_file_download_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Input File Path on FTP</b></label>
 								<input type="text" id="pop_file_download_ftp_file_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Output Local Path</b></label>
 								<input type="text" id="pop_file_download_ftp_local_path">
 							</div>
@@ -2980,32 +2886,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_file_rename_ftp_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_file_rename_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_file_rename_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Input File Path</b></label>
 								<input type="text" id="pop_file_rename_ftp_file_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Current File Name</b></label>
 								<input type="text" id="pop_file_rename_ftp_file_name">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter New File Name</b></label>
 								<input type="text" id="pop_file_rename_ftp_new_file">
 							</div>
@@ -3037,27 +2943,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_file_upload_ftp_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_file_upload_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_file_upload_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter File Path</b></label>
 								<input type="text" id="pop_file_upload_ftp_file_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Output Server Path</b></label>
 								<input type="text" id="pop_file_upload_ftp_server_path">
 							</div>
@@ -3089,27 +2995,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_folder_delete_ftp_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_folder_delete_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_folder_delete_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Path</b></label>
 								<input type="text" id="pop_folder_delete_ftp_folder_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Name</b></label>
 								<input type="text" id="pop_folder_delete_ftp_folder_name">
 							</div>
@@ -3141,27 +3047,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_folder_upload_ftp_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_folder_upload_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_folder_upload_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Path</b></label>
 								<input type="text" id="pop_folder_upload_ftp_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Output Server Path</b></label>
 								<input type="text" id="pop_folder_upload_ftp_server_path">
 							</div>
@@ -3193,17 +3099,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_ftp_connect_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_ftp_connect_server_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_ftp_connect_server_password">
 							</div>
@@ -3235,17 +3141,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_ftp_disconnect_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_ftp_disconnect_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_ftp_disconnect_password">
 							</div>
@@ -3277,17 +3183,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_secure_ftp_connection_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_secure_ftp_connection_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_secure_ftp_connection_password">
 							</div>
@@ -3318,7 +3224,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="btn_pop_ftp_server_connection_server_address">
 							</div>
@@ -3350,17 +3256,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter FTP Server Address</b></label>
 								<input type="text" id="pop_list_ftp_direct_server_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Username</b></label>
 								<input type="text" id="pop_list_ftp_direct_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="text" id="pop_list_ftp_direct_password">
 							</div>
@@ -3392,27 +3298,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_change_directory_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_change_directory_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_change_directory_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_change_directory_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_change_directory_enter_name">
 							</div>
@@ -3443,37 +3349,37 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_directory">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter document name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_document">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter download path</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_ftp_file_download_path">
 							</div>
@@ -3505,32 +3411,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_directory">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter download path</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_files_ftp_path">
 							</div>
@@ -3562,32 +3468,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_directory">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter download path</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_single_folder_ftp_path">
 							</div>
@@ -3619,32 +3525,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_directory">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter download path</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_download_multiple_ftp_folders_path">
 							</div>
@@ -3676,32 +3582,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_directory">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter download path</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_file_path">
 							</div>
@@ -3732,32 +3638,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_directory">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter download path</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_files_path">
 							</div>
@@ -3789,32 +3695,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_directory">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter download path</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_single_ftp_folder_path">
 							</div>
@@ -3845,32 +3751,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_port">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_directory">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter download path</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_upload_multiple_ftp_folders_path">
 							</div>
@@ -3902,32 +3808,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_port">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter file path</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_files_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<button type="button" class="btn" id="btn_pop_delete_ftp_files_ok">OK</button>
 								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
 							</div>
@@ -3954,32 +3860,32 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_rename_ftp_file_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_rename_ftp_file_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_rename_ftp_file_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_rename_ftp_file_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter old directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_rename_ftp_file_old_directory">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter new directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_rename_ftp_file_directory">
 							</div>
@@ -4011,27 +3917,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_create_ftp_directory_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_create_ftp_directory_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_create_ftp_directory_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_create_ftp_directory_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory name</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_create_ftp_directory_name">
 							</div>
@@ -4063,27 +3969,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_directory_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_directory_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_directory_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_directory_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter directory</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_delete_ftp_directory_name">
 							</div>
@@ -4115,27 +4021,27 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter IP address</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_invoke_ftp_IP_address">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter port number</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_invoke_ftp_port_number">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter username</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_invoke_ftp_username">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter password</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_invoke_ftp_password">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter input command</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_invoke_ftp_input_command">
 							</div>
@@ -4172,7 +4078,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter file extension</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_create_new_file_extension">
 							</div>
@@ -4200,28 +4106,28 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 					<form class="form_popup" action="/">
 
-					<h2>Copy files</h2>
-
-					<div>
+						<h2>Copy files</h2>
 
 						<div>
-							<label><b>Enter source path</b></label>
-							<input type="file" list="browsers" name="browser" multiple id="pop_copy_files_source_path">
+
+							<div class="form-space">
+								<label><b>Enter source path</b></label>
+								<input type="file" list="browsers" name="browser" multiple id="pop_copy_files_source_path">
+							</div>
+
+							<div class="form-space">
+								<label><b>Enter destination path</b></label>
+								<input type="file" list="browsers" name="browser" multiple id="pop_copy_files_destination_path">
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_copy_files_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
 						</div>
 
-						<div>
-							<label><b>Enter destination path</b></label>
-							<input type="file" list="browsers" name="browser" multiple id="pop_copy_files_destination_path">
-						</div>
-
-						<div class="d-flex justify-content-end">
-							<button type="button" class="btn" id="btn_pop_copy_files_ok">OK</button>
-							<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
-						</div>
-
-					</div>
-
-				</form>
+					</form>
 
 				</div>
 			</div>
@@ -4241,12 +4147,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter source path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_move_files_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter destination path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_move_files_destination_path">
 							</div>
@@ -4278,21 +4184,20 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter source path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_rename_files_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter old filename</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_rename_files_old_name">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter new filename</b></label>
 								<input type="text" list="browsers" name="browser" id="pop_rename_files_new_name">
 							</div>
-
 
 							<div class="d-flex justify-content-end">
 								<button type="button" class="btn" id="btn_pop_rename_files_ok">OK</button>
@@ -4321,7 +4226,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter source path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_delete_file_source_path">
 							</div>
@@ -4353,7 +4258,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter source path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_delete_temporary_files_source_path">
 							</div>
@@ -4385,7 +4290,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select file</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_create_file_shortcut_select_file">
 							</div>
@@ -4417,12 +4322,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select file</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_get_file_part_select_file">
 							</div>
 
-							<div>
+							<div class="d-flex justify-content-end">
 								<button type="button" class="btn" id="btn_pop_get_file_part_ok">OK</button>
 								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
 							</div>
@@ -4449,7 +4354,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter source path</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_print_file_source_path">
 							</div>
@@ -4481,7 +4386,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter source path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_print_files_source_path">
 							</div>
@@ -4513,17 +4418,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select file</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_zip_file_select_file">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select location</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_zip_file_select_location">
 							</div>
 
-							<div>
+							<div class="d-flex justify-content-end">
 								<button type="button" class="btn" id="btn_pop_zip_file_ok">OK</button>
 								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
 							</div>
@@ -4549,17 +4454,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select file</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_unzip_file_select_file">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select location</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_unzip_file_select_location">
 							</div>
 
-							<div>
+							<div class="d-flex justify-content-end">
 								<button type="button" class="btn" id="btn_pop_unzip_file_ok">OK</button>
 								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
 							</div>
@@ -4591,7 +4496,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Path</b></label>
 								<input type="file" id="pop_open_folder_path">
 							</div>
@@ -4623,12 +4528,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Path</b></label>
 								<input type="file" id="pop_create_folder_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Name</b></label>
 								<input type="text" id="pop_create_folder_name">
 							</div>
@@ -4660,12 +4565,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Folder Path</b></label>
 								<input type="file" id="pop_copy_folder_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Folder Path</b></label>
 								<input type="file" id="pop_copy_folder_destination_path">
 							</div>
@@ -4697,12 +4602,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Current Folder Path</b></label>
 								<input type="file" id="pop_move_folder_current_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter New Folder Path</b></label>
 								<input type="file" id="pop_move_folder_new_path">
 							</div>
@@ -4734,17 +4639,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Current Folder Path</b></label>
 								<input type="file" id="pop_rename_folder_current_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Current Folder Name </b></label>
 								<input type="text" id="pop_rename_folder_current_name">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter New Folder Name</b></label>
 								<input type="text" id="pop_rename_folder_new_name">
 							</div>
@@ -4776,12 +4681,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Folder Path</b></label>
 								<input type="file" id="pop_create_shortcut_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Shortcut Path</b></label>
 								<input type="file" id="pop_create_shortcut_destination_path">
 							</div>
@@ -4818,7 +4723,7 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Send To</b></label>
 								<input type="text" list="browsers" name="browser" placeholder="Insert image URL.." id="pop_extract_image_url" id="pop_extract_image_send_to">
 							</div>
@@ -4839,30 +4744,33 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 		<!-- Extract Image Response POP-UPS STARTS HERE -->
 		<div id="modalOne_extract_image_response" class="modal">
-		  <div class="modal-content">
-			<div class="contact-form">
-			  <a class="close">&times;</a>
+			<div class="modal-content">
+				<div class="contact-form">
 
-			  <form class="extract_image_response_form_popup" action="/">
+					<a class="close">&times;</a>
 
-				<h2>Extracted Data</h2>
-				<div>
-				  <div class="1 tabcontent">
-					<div>
+					<form class="extract_image_response_form_popup" action="/">
 
-					  <div id="extract_image_response_text">
-					  <p> Extracting... </p>
-					  </div>
-					  </div>
-					  </div>
-					  <button type="button" class="btn" id="btn_extract_image_response_save">SAVE</button>
-					  <button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
-					</div>
-				  </div>
+						<h2>Extracted Data</h2>
+
+						<div>
+
+							<div>
+								<div id="extract_image_response_text">
+								<p>Extracting...</p>
+							</div>
+
+							<div>
+								<button type="button" class="btn" id="btn_extract_image_response_save">SAVE</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
+
+						</div>
+
+					</form>
+
 				</div>
-			  </form>
 			</div>
-		  </div>
 		</div>
 		<!-- Extract Image Response POP-UPS ENDS HERE -->
 
@@ -4884,17 +4792,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter PDF Path</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_create_pdf_path" multiple>
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter PDF Name</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_create_pdf_name" multiple>
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Text</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_create_pdf_text" multiple>
 							</div>
@@ -4926,17 +4834,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select PDF</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_split_pdf_select_pdf" multiple>
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select Destination</b></label>
 								<input type="text" webkitdirectory directory multiple list="browsers" name="browser" id="pop_split_pdf_select_destination">
 							</div>
 
-							<div>
+							<div class="d-flex justify-content-end">
 								<button type="button" class="btn" id="btn_split_pdf_ok">OK</button>
 								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
 							</div>
@@ -4949,99 +4857,6 @@ Extension <input id='extension' type='text' name='extension'> -->
 			</div>
 		</div>
 		<!-- Split PDF ends here -->
-
-		<div id="modalOne" class="modal">
-			      <div class="modal-content">
-			        <div class="contact-form">
-			          <a class="close">&times;</a>
-			            <div class="tab">
-			              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-			              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-			            </div>
-			          <form class="form_popup" action="/">
-			            <div class="tooltip">
-			            <i class="fa fa-info-circle">
-			              <span class="tooltiptext">It will concatenate multiple PDF files.</span>
-			            </i>
-			            </div>
-			            <h2 style="margin: -30px 0 10px;">Concatenate PDF</h2>
-
-			            <div>
-			              <div class="1 tabcontent">
-			                <div>
-			                  <h1>Action Input</h1>
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Select first pdf file which is to be merged.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Select First PDF</b></label>
-			                  <input type="file" list="browsers" name="browser" multiple>
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Select second pdf file which is to be merged.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Select Second PDF</b></label>
-			                  <input type="file" list="browsers" name="browser" multiple>
-
-			                  <div class="tooltip">
-			                    <i class="fa fa-info-circle">
-			                      <span class="tooltiptext">Select the location of output file.</span>
-			                    </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Select Destination PDF Path</b></label>
-			                  <input type="file" list="browsers" name="browser" multiple>
-
-			                <div>
-			                  <h1>Action Output</h1>
-			                  <div class="tooltip">
-			                          <i class="fa fa-info-circle">
-			                            <span class="tooltiptext">It will concatenate PDF Files</span>
-			                          </i>
-			                  </div>
-
-			                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-			                  <input type="text" name="psw">
-
-			                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-			                  <label><b>This Action is Enable</b></label><br>
-
-			                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-
-			            <div>
-			              <div class="2 tabcontent">
-			                <div>
-			                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-			                  <input type="text">
-
-			                  <label style="position: relative;left:0%;"><b>Exception 4</b></label>
-			                  <input type="text">
-
-			                </div>
-
-			                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-			        </div>
-			      </div>
-			    </div>
 
 		<!-- Concatenate PDF starts here -->
 		<div id="modalOne_concatenate_pdf" class="modal">
@@ -5056,17 +4871,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select First PDF</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_concatenate_pdf_select_first">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select Second PDF</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_concatenate_pdf_select_second">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Select Destination PDF Path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_concatenate_pdf_destination_path">
 							</div>
@@ -5098,22 +4913,22 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source PDF Path</b></label>
 								<input type="file" list="browsers" name="browser" id="pop_insert_newpage_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Page Index</b></label>
 								<input type="number" id="pop_insert_newpage_pdf_page_index">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Text (optional)</b></label>
 								<input type="text" list="browsers" name="browser" multiple id="pop_insert_newpage_pdf_text">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination PDF Path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_insert_newpage_pdf_destination_path">
 							</div>
@@ -5145,17 +4960,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter the Source PDF path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_insert_existingpage_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Existing PDF Page</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_insert_existingpage_pdf_existing_page">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination PDF Path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_insert_existingpage_pdf_destination_path">
 							</div>
@@ -5187,17 +5002,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source PDF Path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_encrypt_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination PDF path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_encrypt_pdf_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="password" list="browsers" name="browser" id="pop_encrypt_pdf_password">
 							</div>
@@ -5229,17 +5044,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source PDF path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_decrypt_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination PDF Path</b></label>
 								<input type="file" list="browsers" name="browser" multiple id="pop_decrypt_pdf_destination_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Password</b></label>
 								<input type="password" list="browsers" name="browser" id="pop_decrypt_pdf_password">
 							</div>
@@ -5271,12 +5086,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Pdf Path</b></label>
 								<input type="file" id="pop_extract_image_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Image Path</b></label>
 								<input type="file" id="pop_extract_image_pdf_image_path">
 							</div>
@@ -5308,12 +5123,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Pdf Path</b></label>
 								<input type="file" id="pop_extract_text_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination File Path</b></label>
 								<input type="file" id="pop_extract_text_pdf_file_path">
 							</div>
@@ -5345,12 +5160,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Pdf Path</b></label>
 								<input type="file" id="pop_extract_text_ocr_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination File Path</b></label>
 								<input type="file" id="pop_extract_text_ocr_pdf_file_path">
 							</div>
@@ -5382,17 +5197,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Start Page Number</b></label>
 								<input type="number" id="pop_extract_page_pdf_start_page">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter End Page Number</b></label>
 								<input type="number" id="pop_extract_page_pdf_end_page">
 							</div>
 
-							<div>
+							<div class="d-flex justify-content-end">
 								<button type="submit" class="btn" id="btn_pop_extract_page_pdf_ok">OK</button>
 								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
 							</div>
@@ -5419,17 +5234,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source File Path</b></label>
 								<input type="file" id="pop_any_to_pdf_file_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Pdf Path </b></label>
 								<input type="file" id="pop_any_to_pdf_pdf_path">
 							</div>
 
-							<div>
+							<div class="d-flex justify-content-end">
 								<button type="submit" class="btn" id="btn_pop_any_to_pdf_ok">OK</button>
 								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
 							</div>
@@ -5456,12 +5271,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Word Path</b></label>
 								<input type="file" id="pop_word_to_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Pdf Path</b></label>
 								<input type="file" id="pop_word_to_pdf_destination_path">
 							</div>
@@ -5493,12 +5308,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Excel Path</b></label>
 								<input type="file" id="pop_excel_to_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Pdf Path </b></label>
 								<input type="file" id="pop_excel_to_pdf_destination_path">
 							</div>
@@ -5530,17 +5345,17 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Gif Path</b></label>
 								<input type="file" id="pop_gif_to_pdf_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Pdf Path</b></label>
 								<input type="file" id="pop_gif_to_pdf_destination_path">
 							</div>
 
-							<div>
+							<div class="d-flex justify-content-end">
 								<button type="submit" class="btn" id="btn_pop_gif_to_pdf_ok">OK</button>
 								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
 							</div>
@@ -5567,12 +5382,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Pdf Path</b></label>
 								<input type="file" id="pop_pdf_to_word_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Word Path</b></label>
 								<input type="file" id="pop_pdf_to_word_destination_path">
 							</div>
@@ -5604,12 +5419,12 @@ Extension <input id='extension' type='text' name='extension'> -->
 
 						<div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Source Pdf Path</b></label>
 								<input type="file" id="pop_pdf_to_excel_source_path">
 							</div>
 
-							<div>
+							<div class="form-space">
 								<label><b>Enter Destination Excel Path</b></label>
 								<input type="file" id="pop_pdf_to_excel_destination_path">
 							</div>
@@ -5631,378 +5446,239 @@ Extension <input id='extension' type='text' name='extension'> -->
 <!--------------- PDF POP-UPS ENDS HERE ------------------>
 
 
-		    <!-- WEB APLICATION AUTOMATION POP-UPS STARTS HERE -->
-		    <!-- Curebay webautomation POP-UPS STARTS HERE -->
-		    <div id="modalOne_curebay_webautomation" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		            </div>
-		          <form class="curebay_webautomation_form_popup" action="/">
-		            <div class="tooltip">
-		            </div>
-		            <h2 style="margin: -30px 40px 10px 20px; margin-left: 130px;">CureBay Web Automation</h2>
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <!-- <h1>Action Input</h1> -->
-		                  <div class="tooltip">
-		                  </div>
-		                  <label style="position: relative;left: 0%;"><b>Send To</b></label>
-		                  <input type="text" list="browsers" name="browser" placeholder="login id" id="pop_curebay_webautomation_id">
-		                  <div class="tooltip">
-		                  </div>
-		                  </div>
-		                  <button type="button" class="btn" id="btn_curebay_webautomation_ok" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-		    <!-- Curebay webautomation POP-UPS ENDS HERE -->
+<!--------------- WEB APPLICATION AUTOMATION POP-UPS STARTS HERE ------------------>
 
-		    <!--  Record Web POP-UPS STARTS HERE -->
-		    <div id="modalOne_record_web" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		            </div>
-		          <form class="record_web_form_popup" action="/">
-		            <div class="tooltip">
-		            </div>
-		            <h2 style="margin: -30px 40px 10px 20px; margin-left: 130px;">Record Web</h2>
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <!-- <h1>Action Input</h1> -->
+		<!--  Record Web starts here -->
+		<div id="modalOne_record_web" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
 
-		                  </div>
-		                  <button type="button" class="btn" id="btn_record_web_record" style=" position: relative; left: 15%;"
-		                  				onclick="this.style.backgroundColor='red' ;this.textContent='RECORDING..'; this.style.fontSize='20';">RECORD</button>
-		                  <button type="button" class="btn cancel" id="btn_record_web_stop" style=" position: relative; left: 30%;">STOP</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 45%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-		    <!--  Record Web POP-UPS ENDS HERE -->
-
-
-		    <!-- WEB APLICATION AUTOMATION POP-UPS ENDS HERE -->
-
-
-
+					<a class="close">&times;</a>
 
-		    <!-- FTP POP-UPS START HERE -->
+					<form class="record_web_form_popup" action="/">
 
+						<h2>Record Web</h2>
 
+						<div class="d-flex justify-content-center">
 
+							<div>
+								<button type="button" class="btn" id="btn_record_web_record"
+								onclick="this.style.backgroundColor='red' ;this.textContent='RECORDING..'; this.style.fontSize='20';">RECORD</button>
+								<button type="button" class="btn cancel" id="btn_record_web_stop">STOP</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
 
+						</div>
 
+					</form>
 
+				</div>
+			</div>
+		</div>
+		<!--  Record Web ends here -->
 
+		<!-- Curebay webautomation starts here -->
+		<div id="modalOne_curebay_webautomation" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
 
+					<a class="close">&times;</a>
 
+					<form class="curebay_webautomation_form_popup" action="/">
 
+						<h2>CureBay Web Automation</h2>
 
+						<div>
 
+							<div class="form-space">
+								<label><b>Send To</b></label>
+								<input type="text" list="browsers" name="browser" placeholder="login id" id="pop_curebay_webautomation_id">
+							</div>
 
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_curebay_webautomation_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
 
-			    <!-- VASUDHA FTP -->
+						</div>
 
+					</form>
 
+				</div>
+			</div>
+		</div>
+		<!-- Curebay webautomation ends here -->
 
+<!--------------- WEB APPLICATION AUTOMATION POP-UPS ENDS HERE ------------------>
 
-					<!-- delete folder -->
 
-					<div id="modalOne_del_folder" class="modal">
-					<div class="modal-content">
-					<div class="contact-form">
-					  <a class="close">&times;</a>
+<!--------------- FTP POP-UPS START HERE ------------------>
 
-					  <div class="tab">
-					    <button class="tablinks" onclick="openCity(event, '1')">General</button>
-					    <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-					  </div>
+		<!-- VASUDHA FTP -->
 
-					 <form class="form_popup" action="/">
-					    <div class="tooltip">
-					    <i class="fa fa-info-circle">
-					      <span class="tooltiptext">It will Delete the Folder</span>
-					    </i>
-					    </div>
-					    <h2 style="margin: -30px 0 10px;">Delete Folder</h2>
+		<!-- delete folder -->
+		<div id="modalOne_del_folder" class="modal">
+		<div class="modal-content">
+		<div class="contact-form">
+		  <a class="close">&times;</a>
 
+		  <div class="tab">
+			<button class="tablinks" onclick="openCity(event, '1')">General</button>
+			<button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
+		  </div>
 
+		 <form class="form_popup" action="/">
+			<div class="tooltip">
+			<i class="fa fa-info-circle">
+			  <span class="tooltiptext">It will Delete the Folder</span>
+			</i>
+			</div>
+			<h2 style="margin: -30px 0 10px;">Delete Folder</h2>
 
-					    <div>
-					      <div class="1 tabcontent">
-					        <div>
-					          <h1>Action Input</h1>
-					          <div class="tooltip">
-					            <i class="fa fa-info-circle">
-					              <span class="tooltiptext">Enter the location of Folder</span>
-					            </i>
-					          </div>
 
-					          <label style="position: relative;left: 0%;"><b>Enter Folder Path</b></label>
 
-					           <input type="file">
+			<div>
+			  <div class="1 tabcontent">
+				<div>
+				  <h1>Action Input</h1>
+				  <div class="tooltip">
+					<i class="fa fa-info-circle">
+					  <span class="tooltiptext">Enter the location of Folder</span>
+					</i>
+				  </div>
 
+				  <label style="position: relative;left: 0%;"><b>Enter Folder Path</b></label>
 
-					            <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>Make Instance Invisible</b></label><br>
-					        </div>
-					        <div>
-					          <h1>Action Output</h1>
-					          <div class="tooltip">
-					                  <i class="fa fa-info-circle">
-					                    <span class="tooltiptext">Intermediate variable</span>
-					                  </i>
-					          </div>
-					          <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
-					          <input type="text" name="psw">
-					          <input type="checkbox" name="vehicle1" style="width: 10%;">
-					          <label > <b>This Action is Enable</b></label><br>
+				   <input type="file">
 
-					          <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
 
-					    <div>
-					      <div class="2 tabcontent">
-					        <div>
-					          <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
-					          <input type="text">
+					<input type="checkbox" name="vehicle1" style="width: 10%;">
+				  <label > <b>Make Instance Invisible</b></label><br>
+				</div>
+				<div>
+				  <h1>Action Output</h1>
+				  <div class="tooltip">
+						  <i class="fa fa-info-circle">
+							<span class="tooltiptext">Intermediate variable</span>
+						  </i>
+				  </div>
+				  <label style="position: relative;left: 0%;"><b>Store Instant </b></label>
+				  <input type="text" name="psw">
+				  <input type="checkbox" name="vehicle1" style="width: 10%;">
+				  <label > <b>This Action is Enable</b></label><br>
 
-					          <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
-					          <input type="text">
+				  <button type="submit" class="btn" style=" position: relative; left: 70%;">OK</button>
+				  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
+				</div>
+			  </div>
+			</div>
 
-					          </div>
+			<div>
+			  <div class="2 tabcontent">
+				<div>
+				  <label style="position: relative;left:0%;"><b>Excepion 1</b></label>
+				  <input type="text">
 
-					          <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-					        </div>
-					      </div>
-					    </div>
-					  </form>
-					</div>
-					</div>
-					</div>
+				  <label style="position: relative;left:0%;"><b>Excepion 2</b></label>
+				  <input type="text">
 
+				  </div>
 
+				  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
+				</div>
+			  </div>
+			</div>
+		  </form>
+		</div>
+		</div>
+		</div>
 
+		<!-- VASUDHA FTP ENDS -->
 
+<!--------------- FTP POP-UPS ENDS HERE ------------------>
 
 
+<!--------------- WEB DATA EXTRACTION POP-UPS START HERE ------------------>
 
+		<!-- extract data from webpage starts here -->
+		<div id="modalOne_extract_data_from_webpage" class="modal">
+			<div class="modal-content">
+				<div class="contact-form">
 
+					<a class="close">&times;</a>
 
+					<form class="form_popup" action="/">
 
+						<h2>Extract data from web page</h2>
 
+						<div>
 
+							<div class="form-space">
+								<label><b>Enter the url</b></label>
+								<input type="url" list="browsers" name="browser" id="pop_extract_data_from_webpage_url">
+							</div>
 
+							<div class="form-space">
+								<label><b>Enter output location</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_extract_data_from_webpage_output_location">
+							</div>
 
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_extract_data_from_webpage_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
 
+						</div>
 
+					</form>
 
+				</div>
+			</div>
+		</div>
+		<!-- extract data from webpage ends here -->
 
+		<!-- take screenshots of webpage starts here -->
+		<div id="modalOne_take_screenshot_of_webpage" class="modal">
+ 			<div class="modal-content">
+				<div class="contact-form">
 
+					<a class="close">&times;</a>
 
+					<form class="form_popup" action="/">
 
+						<h2>Screenshot of web page</h2>
 
+						<div>
 
+							<div class="form-space">
+								<label><b>Enter the url</b></label>
+								<input type="url" list="browsers" name="browser" id="pop_take_screenshot_of_webpage_url">
+							</div>
 
+							<div class="form-space">
+								<label><b>Enter output location</b></label>
+								<input type="file" list="browsers" name="browser" id="pop_take_screenshot_of_webpage_output_location">
+							</div>
 
-			    <!-- VASUDHA FTP ENDS -->
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn" id="btn_pop_take_screenshot_of_webpage_ok">OK</button>
+								<button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+							</div>
 
+						</div>
 
-		    <!-- FTP POP-UPS ENDS HERE -->
-		    <!-- WEB DATA EXTRACTION POP-UPS START HERE -->
-		    <div id="modalOne_extract_data_from_webpage" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		            </div>
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will extract all data from the mentioned url and store data in the output location.</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Extract data from web page</h2>
+					</form>
 
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the url from which data is to be extracted.</span>
-		                    </i>
-		                  </div>
+				</div>
+			</div>
+		</div>
+		<!-- take screenshots of webpage starts here -->
 
-		                  <label style="position: relative;left: 0%;"><b>Enter the url</b></label>
-		                  <input type="url" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the location to store output.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter output location</b></label>
-		                  <input type="file" list="browsers" name="browser">
-
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">It will Open the File</span>
-		                          </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-		                  <input type="text" name="psw">
-
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label><b>This Action is Enable</b></label><br>
-
-		                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
- 
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-		                  <input type="text">
-		                </div>
-
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-
-
-
-		    <div id="modalOne_take_screenshot_of_webpage" class="modal">
-		      <div class="modal-content">
-		        <div class="contact-form">
-		          <a class="close">&times;</a>
-		            <div class="tab">
-		              <button class="tablinks" onclick="openCity(event, '1')">General</button>
-		              <button class="tablinks" onclick="openCity(event, '2')">Exception Handling</button>
-		            </div>
-		          <form class="form_popup" action="/">
-		            <div class="tooltip">
-		            <i class="fa fa-info-circle">
-		              <span class="tooltiptext">It will take screenshot of mentioned url and store data in the output location.</span>
-		            </i>
-		            </div>
-		            <h2 style="margin: -30px 0 10px;">Screenshot of web page</h2>
-
-		            <div>
-		              <div class="1 tabcontent">
-		                <div>
-		                  <h1>Action Input</h1>
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the url from where screenshot is to be taken.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter the url</b></label>
-		                  <input type="url" list="browsers" name="browser">
-
-		                  <div class="tooltip">
-		                    <i class="fa fa-info-circle">
-		                      <span class="tooltiptext">Enter the location to store output.</span>
-		                    </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Enter output location</b></label>
-		                  <input type="file" list="browsers" name="browser">
-
-		                <div>
-		                  <h1>Action Output</h1>
-		                  <div class="tooltip">
-		                          <i class="fa fa-info-circle">
-		                            <span class="tooltiptext">It will Open the File</span>
-		                          </i>
-		                  </div>
-
-		                  <label style="position: relative;left: 0%;"><b>Store instant</b></label>
-		                  <input type="text" name="psw">
-
-		                  <input type="checkbox" name="vehicle1" style="width: 10%;">
-		                  <label><b>This Action is Enable</b></label><br>
-
-		                  <button type="button" class="btn" style=" position: relative; left: 70%;">OK</button>
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-
-		            <div>
-		              <div class="2 tabcontent">
-		                <div>
-		                  <label style="position: relative;left:0%;"><b>Exception 1</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 2</b></label>
-		                  <input type="text">
-
-		                  <label style="position: relative;left:0%;"><b>Exception 3</b></label>
-		                  <input type="text">
-		                </div>
-
-		                  <button type="button" class="btn cancel" onclick="closeForm()" style=" position: relative; left: 70%;">CANCEL</button>
-		                </div>
-		              </div>
-		            </div>
-		          </form>
-		        </div>
-		      </div>
-		    </div>
-		    <!-- WEB DATA EXTRACTION POP-UPS ENDS HERE -->
-		    <!-- DIRECT WEB ACCESS POP-UPS START HERE -->
-
-
-
-
-
-
+<!--------------- WEB DATA EXTRACTION POP-UPS ENDS HERE ------------------>
 
 	</div>
 
-	</div>
+</div>
 
 <script  src="{%static  'js/node_connector_main.js' %}"></script>
 
