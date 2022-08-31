@@ -119,7 +119,7 @@ body{
 }
 
 #column_links{
-	display: flex;
+	display: flex; position: relative;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
@@ -177,16 +177,12 @@ form .btn:hover { color: #fff; }
 
 #left_panel ul { width: 100%; }
 
-#left_panel .list-group-item { padding: 0.75rem 1.25rem 0.75rem 2rem; }
+#left_panel .list-group-item { padding: 0.75rem 1.25rem 0.75rem 2rem; background: #f1efef; border-top: 0; border-bottom: 1px solid #dddcdc; }
+#left_panel .list-group-item:last-child { border-bottom: 0; }
 
-.caret:after {
-    content: "";
-    font-family: "FontAwesome";
-    color: #fff;
-}
+.caret:after { content: "\f107"; font-family: "FontAwesome"; color: #1e1f4b; }
 
-nav > ul > li > a:after {
-    position: absolute;
-    top: 0;
-    right: 10px;
-}
+#panel_head { height: auto; padding: 10px 0; }
+
+nav > ul > li > a:after { position: absolute; top: 18px; right: 16px; }
+.list-group-item:first-child { border-radius: 0; }

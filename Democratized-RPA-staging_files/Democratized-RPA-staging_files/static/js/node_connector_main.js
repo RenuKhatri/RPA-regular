@@ -755,7 +755,7 @@ window.addEventListener("load", () => {
 
 	const HANDLE_RADIUS = 7;
 	const HANDLE_WIDTH = 2.5;
-	const NODE_WIDTH = 3;
+	const NODE_WIDTH = 2;
 	const ARROW_HEAD = 5;
 	let popupInputId = null;
 	let popupOutputId = null;
@@ -778,7 +778,7 @@ window.addEventListener("load", () => {
 	my_gradient.addColorStop(1, "#B0BEC5");
 
 
-	const NODE_COLOR_DEFAULT = "#bdbdbd"; //"#4a4677"
+	const NODE_COLOR_DEFAULT = "#969696"; //"#4a4677"
 	const NODE_COLOR_FAILURE = "red";
 	const NODE_COLOR_SUCCESS = "#43A047";
 	const NODE_COLOR_IN_PROGRESS = "yellow";
@@ -920,7 +920,7 @@ window.addEventListener("load", () => {
 			this.connectorColor = typeof connectorColor !== 'undefined' ? connectorColor : CONNECTOR_COLOR_DEFAULT;
 		}
 			drawConnectorPath(ctx){
-			ctx.lineWidth = 3;
+			ctx.lineWidth = 2;
 			ctx.lineCap = "round";
 			ctx.lineJoin = "round";
 			ctx.strokeStyle = this.connectorColor;
